@@ -64,16 +64,21 @@
  * @see template_process()
  */
 ?>
-<div id="page">
+<section id="page">
   <header id="masthead" class="site-header container" role="banner">
     <div class="row">
       <div id="logo" class="site-branding col-sm-6">
-        <?php if ($logo): ?><div id="site-logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-        </a></div><?php endif; ?>
+        <?php if ($logo): ?>
+          <div id="site-logo">
+            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
+          </div>
+        <?php endif; ?>
         <h1 id="site-title">
           <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
         </h1>
+        <?php if ($site_slogan): ?>
+          <div id="site-slogan"><?php print $site_slogan; ?></div>
+        <?php endif; ?>
       </div>
       <div class="col-sm-6 mainmenu">
         <div class="mobilenavi"></div>
@@ -93,52 +98,31 @@
     </div>
   </header>
 
-
   <?php if ($is_front): ?>
-  <?php if (theme_get_setting('slideshow_display','nexus')): ?>
-  <?php 
-    $slide1_head = check_plain(theme_get_setting('slide1_head','nexus'));   $slide1_desc = check_markup(theme_get_setting('slide1_desc','nexus'), 'full_html'); $slide1_url = check_plain(theme_get_setting('slide1_url','nexus'));
-    $slide2_head = check_plain(theme_get_setting('slide2_head','nexus'));   $slide2_desc = check_markup(theme_get_setting('slide2_desc','nexus'), 'full_html'); $slide2_url = check_plain(theme_get_setting('slide2_url','nexus'));
-    $slide3_head = check_plain(theme_get_setting('slide3_head','nexus'));   $slide3_desc = check_markup(theme_get_setting('slide3_desc','nexus'), 'full_html'); $slide3_url = check_plain(theme_get_setting('slide3_url','nexus'));
-  ?>
-  <div id="slidebox" class="flexslider">
-    <ul class="slides">
-      <li>
-        <img src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/slide-image-1.jpg'; ?>"/>
-        <?php if($slide1_head || $slide1_desc) : ?>
-          <div class="flex-caption">
-            <h2><?php print $slide1_head; ?></h2><?php print $slide1_desc; ?>
-            <a class="frmore" href="<?php print url($slide1_url); ?>"> <?php print t('READ MORE'); ?> </a>
-          </div>
-        <?php endif; ?>
-      </li>
-      <li>
-        <img src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/slide-image-2.jpg'; ?>"/>
-        <?php if($slide2_head || $slide2_desc) : ?>
-          <div class="flex-caption">
-            <h2><?php print $slide2_head; ?></h2><?php print $slide2_desc; ?>
-            <a class="frmore" href="<?php print url($slide2_url); ?>"> <?php print t('READ MORE'); ?> </a>
-          </div>
-        <?php endif; ?>
-      </li>
-      <li>
-        <img src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/slide-image-3.jpg'; ?>"/>
-        <?php if($slide3_head || $slide3_desc) : ?>
-          <div class="flex-caption">
-            <h2><?php print $slide3_head; ?></h2><?php print $slide3_desc; ?>
-            <a class="frmore" href="<?php print url($slide3_url); ?>"> <?php print t('READ MORE'); ?> </a>
-          </div>
-        <?php endif; ?>
-      </li>
-    </ul><!-- /slides -->
-    <div class="doverlay"></div>
-  </div>
-  <?php endif; ?>
+    <?php if (theme_get_setting('slideshow_display','nexus')): ?>
+      <?php 
+        $slide1_head = check_plain(theme_get_setting('slide1_head','nexus'));   $slide1_desc = check_markup(theme_get_setting('slide1_desc','nexus'), 'full_html'); $slide1_url = check_plain(theme_get_setting('slide1_url','nexus'));
+      ?>
+      <section id="slidebox" class="flexslider">
+        <ul class="slides">
+          <li>
+            <img alt="$slide1_head" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/slide-image-1.jpg'; ?>"/>
+            <?php if($slide1_head || $slide1_desc) : ?>
+              <div class="flex-caption">
+                <h2><?php print $slide1_head; ?></h2><?php print $slide1_desc; ?>
+                <a class="frmore" href="<?php print url($slide1_url); ?>"> <?php print t('READ MORE'); ?> </a>
+              </div>
+            <?php endif; ?>
+          </li>
+        </ul><!-- /slides -->
+        <div class="doverlay"></div>
+      </section>
+    <?php endif; ?>
   <?php endif; ?>
 
   <?php if($page['preface_first'] || $page['preface_middle'] || $page['preface_last']) : ?>
     <?php $preface_col = ( 12 / ( (bool) $page['preface_first'] + (bool) $page['preface_middle'] + (bool) $page['preface_last'] ) ); ?>
-    <div id="preface-area">
+    <section id="preface-area">
       <div class="container">
         <div class="row">
           <?php if($page['preface_first']): ?><div class="preface-block col-sm-<?php print $preface_col; ?>">
@@ -152,11 +136,11 @@
           </div><?php endif; ?>
         </div>
       </div>
-    </div>
+    </section>
   <?php endif; ?>
 
   <?php if($page['header']) : ?>
-    <div id="header-block">
+    <section id="header-block">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -164,10 +148,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
   <?php endif; ?>
 
-    <div id="main-content">
+  <div id="main-content">
     <div class="container"> 
       <div class="row">
         <?php if($page['sidebar_first']) { $primary_col = 8; } else { $primary_col = 12; } ?>
@@ -189,7 +173,7 @@
         </div>
         <?php if ($page['sidebar_first']): ?>
           <aside id="sidebar" class="col-sm-4" role="complementary">
-           <?php print render($page['sidebar_first']); ?>
+            <?php print render($page['sidebar_first']); ?>
           </aside> 
         <?php endif; ?>
       </div>
@@ -197,7 +181,7 @@
   </div>
 
   <?php if($page['footer']) : ?>
-    <div id="footer-block">
+    <section id="footer-block">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -205,12 +189,12 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
   <?php endif; ?>
 
   <?php if ($page['footer_first'] || $page['footer_second'] || $page['footer_third'] || $page['footer_fourth']): ?>
     <?php $footer_col = ( 12 / ( (bool) $page['footer_first'] + (bool) $page['footer_second'] + (bool) $page['footer_third'] + (bool) $page['footer_fourth'] ) ); ?>
-    <div id="bottom">
+    <section id="bottom">
       <div class="container">
         <div class="row">
           <?php if($page['footer_first']): ?><div class="footer-block col-sm-<?php print $footer_col; ?>">
@@ -227,7 +211,7 @@
           </div><?php endif; ?>
         </div>
       </div>
-    </div>
+    </section>
   <?php endif; ?>
 
   <footer id="colophon" class="site-footer" role="contentinfo">
@@ -238,5 +222,5 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
+  </footer>
+</section>
