@@ -65,6 +65,11 @@
  */
 ?>
 <section id="page">
+  <?php if($page['top_bar']): ?>
+    <nav class="container">
+      <?php print render ($page['top_bar']); ?>
+    </nav>
+  <?php endif; ?> 
   <header id="masthead" class="site-header container" role="banner">
     <div class="row">
       <div id="logo" class="site-branding col-sm-6">
@@ -81,7 +86,7 @@
         <?php endif; ?>
       </div>
       <div class="col-sm-6 mainmenu">
-        <div class="mobilenavi"></div>
+        <div class="nav-mobile"></div>
         <nav id="navigation" role="navigation">
           <div id="main-menu">
             <?php 
