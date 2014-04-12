@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300,700);
 /* normalize.css v3.0.0 | MIT License | git.io/normalize */
 /* line 9, ../sass/partials/bootstrap/_normalize.scss */
 html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
@@ -3189,684 +3188,124 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
   th.visible-print, td.visible-print { display: table-cell !important; } }
 @media print { /* line 647, ../sass/partials/bootstrap/_mixins.scss */
   .hidden-print { display: none !important; } }
-/*www.devsaran.com */
-/* Reset ================================================== */
-/* line 9, ../sass/partials/_nexus_style.sass */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+/* Font's definitions */
+/* Open Sans Family */
+@font-face { font-family: "open_sansregular"; src: url("../../fonts/opensans-regular-webfont.eot"); src: url("../../fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/opensans-regular-webfont.woff") format("woff"), url("../../fonts/opensans-regular-webfont.ttf") format("truetype"), url("../../fonts/opensans-regular-webfont.svg#open_sansregular") format("svg"); font-weight: normal; font-style: normal; }
 
-/* line 17, ../sass/partials/_nexus_style.sass */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
-
-/* line 20, ../sass/partials/_nexus_style.sass */
+/* line 1, ../sass/partials/_nexus_style.sass */
 html { height: 100%; }
-
-/* line 23, ../sass/partials/_nexus_style.sass */
-body { line-height: 1; height: 100%; }
-
-/* line 27, ../sass/partials/_nexus_style.sass */
-#page { height: 100%; }
-
-/* line 30, ../sass/partials/_nexus_style.sass */
-ol, ul { list-style: none; }
-
-/* line 33, ../sass/partials/_nexus_style.sass */
-blockquote, q { quotes: none; }
-
-/* line 37, ../sass/partials/_nexus_style.sass */
-blockquote:before, blockquote:after { content: ""; content: none; }
-
-/* line 42, ../sass/partials/_nexus_style.sass */
-q:before, q:after { content: ""; content: none; }
-
-/* line 46, ../sass/partials/_nexus_style.sass */
-table { border-collapse: collapse; border-spacing: 0; }
-
-/* Body & Main ================================================== */
-/* line 53, ../sass/partials/_nexus_style.sass */
-body { nowhitespace: afterproperty; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; font: 14px/1.6 "Oxygen", sans-serif; color: #606060; }
-
-/* Links */
-/* line 62, ../sass/partials/_nexus_style.sass */
-a { color: #f4473a; }
-/* line 64, ../sass/partials/_nexus_style.sass */
-a:visited { color: #f4473a; }
-/* line 66, ../sass/partials/_nexus_style.sass */
-a:hover, a:focus, a:active { color: black; text-decoration: none; }
-
-/*set max img width */
-/* line 72, ../sass/partials/_nexus_style.sass */
-img { max-width: 100%; }
-
-/* Commons ================================================== */
-/*clear floats */
-/* line 80, ../sass/partials/_nexus_style.sass */
-.remove-margin { margin-right: 0 !important; }
-
-/* line 83, ../sass/partials/_nexus_style.sass */
-.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
-
-/* line 91, ../sass/partials/_nexus_style.sass */
-.clear { clear: both; }
-
-/*blockquote */
-/* line 96, ../sass/partials/_nexus_style.sass */
-blockquote { position: relative; margin: 30px 20px; padding-left: 25px; font-style: italic; font-weight: bold; color: black; quotes: "\201C" "\201D" "\2018" "\2019"; }
-/* line 104, ../sass/partials/_nexus_style.sass */
-blockquote:before { color: black; content: open-quote; font-size: 3em; line-height: 0.1em; position: absolute; top: 20px; left: -10px; }
-/* line 112, ../sass/partials/_nexus_style.sass */
-blockquote p:last-child { margin: 0; }
-
-/*preformatted text */
-/* line 117, ../sass/partials/_nexus_style.sass */
-pre { background: white url("images/pre-bg.png") repeat; margin: 40px 0px; padding: 25px 20px; line-height: 25px; border: 1px solid #dddddd; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; }
-
-/* line 129, ../sass/partials/_nexus_style.sass */
-ul, ol { margin: 0 0 1em 1.5em; }
-
-/* line 132, ../sass/partials/_nexus_style.sass */
-ul { list-style: disc; }
-
-/* line 135, ../sass/partials/_nexus_style.sass */
-ol { list-style-type: decimal; }
-/* line 137, ../sass/partials/_nexus_style.sass */
-ol ol { list-style: upper-alpha; }
-/* line 139, ../sass/partials/_nexus_style.sass */
-ol ol ol { list-style: lower-roman; }
-/* line 141, ../sass/partials/_nexus_style.sass */
-ol ol ol ol { list-style: lower-alpha; }
-
-/* line 144, ../sass/partials/_nexus_style.sass */
-ul ul, ol ol, ul ol, ol ul { margin-bottom: 0; }
-
-/* line 147, ../sass/partials/_nexus_style.sass */
-table { margin: 0 0 1.5em; width: 100%; }
-
-/* line 151, ../sass/partials/_nexus_style.sass */
-th { font-weight: bold; padding: 10px 10px; }
-
-/* line 155, ../sass/partials/_nexus_style.sass */
-tr { padding: 5px 5px; }
-
-/* line 158, ../sass/partials/_nexus_style.sass */
-td { padding: 5px 10px; }
-
-/* line 162, ../sass/partials/_nexus_style.sass */
-#primary table { margin: 0 0 1.5em; width: 100%; border: 1px solid #dddddd; border-right: none; background: white; }
-/* line 168, ../sass/partials/_nexus_style.sass */
-#primary th { font-weight: bold; padding: 10px 10px; background: #555555; color: white; }
-/* line 173, ../sass/partials/_nexus_style.sass */
-#primary tr { padding: 5px 5px; }
-/* line 175, ../sass/partials/_nexus_style.sass */
-#primary td { padding: 5px 10px; border-top: 1px solid #dddddd; border-right: 1px solid #dddddd; }
-
-/* Typography ================================================== */
-/* Headings */
-/* line 185, ../sass/partials/_nexus_style.sass */
-h1, h2, h3, h4, h5, h6 { clear: both; }
-
-/* line 188, ../sass/partials/_nexus_style.sass */
-h1 { font-size: 32px; }
-
-/* line 191, ../sass/partials/_nexus_style.sass */
-h2 { font-size: 26px; }
-
-/* line 194, ../sass/partials/_nexus_style.sass */
-h3 { font-size: 20px; }
-
-/* line 197, ../sass/partials/_nexus_style.sass */
-h4 { font-size: 18px; }
-
-/* line 200, ../sass/partials/_nexus_style.sass */
-h5 { font-size: 16px; }
-
-/* line 203, ../sass/partials/_nexus_style.sass */
-h6 { font-size: 14px; }
-
-/* line 206, ../sass/partials/_nexus_style.sass */
-p { margin: 0 0 20px; }
-/* line 208, ../sass/partials/_nexus_style.sass */
-p img { margin: 0; }
-
-/* line 211, ../sass/partials/_nexus_style.sass */
-em { font-style: italic; }
-
-/* line 214, ../sass/partials/_nexus_style.sass */
-strong { font-weight: bold; }
-
-/* line 217, ../sass/partials/_nexus_style.sass */
-small { font-size: 80%; }
-
-/* line 220, ../sass/partials/_nexus_style.sass */
-hr { border: solid rgba(0, 0, 0, 0.2); border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
-
-/* line 227, ../sass/partials/_nexus_style.sass */
-p a { line-height: inherit; }
-/* line 229, ../sass/partials/_nexus_style.sass */
-p a:visited { line-height: inherit; }
-
-/* line 232, ../sass/partials/_nexus_style.sass */
-a { outline: 0; }
-/* line 233, ../sass/partials/_nexus_style.sass */
-a:link { text-decoration: none; }
-/* line 235, ../sass/partials/_nexus_style.sass */
-a:focus { outline: 0; }
-
-/* line 239, ../sass/partials/_nexus_style.sass */
-p a { line-height: inherit; }
-/* line 241, ../sass/partials/_nexus_style.sass */
-p a:visited { line-height: inherit; }
-
-/* line 244, ../sass/partials/_nexus_style.sass */
-a:focus { outline: 0; }
-
-/* Head */
-/* line 249, ../sass/partials/_nexus_style.sass */
-#masthead { position: relative; }
-
-/* line 252, ../sass/partials/_nexus_style.sass */
-.site-branding { margin-bottom: 20px; }
-
-/* line 255, ../sass/partials/_nexus_style.sass */
-#site-logo { float: left; padding: 15px 15px 0 0; }
-
-/* line 259, ../sass/partials/_nexus_style.sass */
-h1#site-title { text-transform: uppercase; font-weight: 800; margin-top: 18px; clear: none; }
-/* line 265, ../sass/partials/_nexus_style.sass */
-h1#site-title a:link, h1#site-title a:visited { color: black; }
-
-/* Menu */
-/* line 270, ../sass/partials/_nexus_style.sass */
-.menutoggle { width: 36px; height: 36px; color: #777777; border: 1px solid #dddddd; border-radius: 3px; line-height: 36px; text-align: center; background: white; position: absolute; right: 20px; top: 25px; font-size: 20px; display: none; }
-
-/* line 285, ../sass/partials/_nexus_style.sass */
-#main-menu { padding: 0px 0px; margin: 22px 0px 15px; height: 45px; border-bottom: none; float: left; }
-/* line 291, ../sass/partials/_nexus_style.sass */
-#main-menu ul { width: auto; float: left; list-style: none; margin: 0; padding: 0 0px; }
-/* line 297, ../sass/partials/_nexus_style.sass */
-#main-menu li { float: left; list-style: none; margin: 0; padding: 0; color: white; font-weight: 400; }
-/* line 304, ../sass/partials/_nexus_style.sass */
-#main-menu li a { color: #777777; display: block; margin: 0; padding: 19px 10px 19px 10px; text-decoration: none; position: relative; }
-/* line 311, ../sass/partials/_nexus_style.sass */
-#main-menu li a:hover, #main-menu li a:active { color: #ed564b; }
-/* line 313, ../sass/partials/_nexus_style.sass */
-#main-menu a.active, #main-menu > ul > li > a.active-trail { color: #ed564b; }
-/* line 316, ../sass/partials/_nexus_style.sass */
-#main-menu li a.sf-with-ul { padding-right: 10px; }
-/* line 319, ../sass/partials/_nexus_style.sass */
-#main-menu li ul li a { color: #777777; width: 148px; margin: 0; padding: 10px 10px; border-top: 1px solid #dddddd; position: relative; font-weight: 400; }
-/* line 327, ../sass/partials/_nexus_style.sass */
-#main-menu li ul li a:link, #main-menu li ul li a:visited { color: #777777; width: 148px; margin: 0; padding: 10px 10px; border-top: 1px solid #dddddd; position: relative; font-weight: 400; }
-/* line 336, ../sass/partials/_nexus_style.sass */
-#main-menu li ul li ul li a { color: #777777; width: 148px; margin: 0; padding: 10px 10px; border-top: 1px solid #dddddd; position: relative; font-weight: 400; }
-/* line 344, ../sass/partials/_nexus_style.sass */
-#main-menu li ul li ul li a:link, #main-menu li ul li ul li a:visited { color: #777777; width: 148px; margin: 0; padding: 10px 10px; border-top: 1px solid #dddddd; position: relative; font-weight: 400; }
-/* line 352, ../sass/partials/_nexus_style.sass */
-#main-menu li ul li ul li ul li a { color: #777777; width: 148px; margin: 0; padding: 10px 10px; border-top: 1px solid #dddddd; position: relative; font-weight: 400; }
-/* line 360, ../sass/partials/_nexus_style.sass */
-#main-menu li ul li ul li ul li a:link, #main-menu li ul li ul li ul li a:visited { color: #777777; width: 148px; margin: 0; padding: 10px 10px; border-top: 1px solid #dddddd; position: relative; font-weight: 400; }
-/* line 369, ../sass/partials/_nexus_style.sass */
-#main-menu ul li ul li:first-child a { border-top: none; }
-/* line 372, ../sass/partials/_nexus_style.sass */
-#main-menu ul li ul li ul li:first-child a, #main-menu ul li ul li ul li ul li:first-child a { border-top: none; }
-/* line 375, ../sass/partials/_nexus_style.sass */
-#main-menu li ul { font-size: 12px; z-index: 9999; position: absolute; left: -999em; height: auto; width: 160px; margin: 0px 0px 0px 0px; padding: 5px 5px; background: #efefef; }
-/* line 377, ../sass/partials/_nexus_style.sass */
-#main-menu li ul li a:hover { color: #ed564b; }
-/* line 380, ../sass/partials/_nexus_style.sass */
-#main-menu li ul li ul li a:hover, #main-menu li ul li ul li ul li a:hover { color: #ed564b; }
-/* line 391, ../sass/partials/_nexus_style.sass */
-#main-menu li ul a { width: 150px; }
-/* line 394, ../sass/partials/_nexus_style.sass */
-#main-menu li ul ul { margin: -44px 0 0 160px; }
-/* line 396, ../sass/partials/_nexus_style.sass */
-#main-menu li:hover ul ul, #main-menu li.sfHover ul ul { left: -999em; }
-/* line 398, ../sass/partials/_nexus_style.sass */
-#main-menu li:hover ul ul ul, #main-menu li.sfHover ul ul ul { left: -999em; }
-/* line 400, ../sass/partials/_nexus_style.sass */
-#main-menu li:hover ul { left: auto; }
-/* line 403, ../sass/partials/_nexus_style.sass */
-#main-menu li li:hover ul, #main-menu li li li:hover ul { left: auto; }
-/* line 405, ../sass/partials/_nexus_style.sass */
-#main-menu li.sfHover ul { left: auto; }
-/* line 408, ../sass/partials/_nexus_style.sass */
-#main-menu li li.sfHover ul, #main-menu li li li.sfHover ul { left: auto; }
-/* line 410, ../sass/partials/_nexus_style.sass */
-#main-menu li:hover, #main-menu li.sfHover { position: static; }
-/* line 412, ../sass/partials/_nexus_style.sass */
-#main-menu > ul > li > a { padding: 10px; }
-
-/* Layout */
-/* line 417, ../sass/partials/_nexus_style.sass */
-#primary, #sidebar-first, #sidebar-second { padding-top: 20px; padding-bottom: 20px; }
-
-/* line 421, ../sass/partials/_nexus_style.sass */
-#main-content { padding-top: 15px; }
-
-/* Slider */
-/* line 426, ../sass/partials/_nexus_style.sass */
-#slidebox { max-height: 550px; position: relative; background: black; }
-
-/* line 431, ../sass/partials/_nexus_style.sass */
-.doverlay { background: url('../images/overlay.png?1397205231'); position: absolute; width: 100%; height: 100%; left: 0px; top: 0px; z-index: 100; }
-
-/* line 440, ../sass/partials/_nexus_style.sass */
-img.grayscale { filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */ filter: gray; /* IE6-9 */ -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */ }
-
-/* line 448, ../sass/partials/_nexus_style.sass */
-.flex-caption { width: 800px; position: absolute; top: 28%; left: 50%; margin-left: -400px; text-align: center; z-index: 120; color: white; }
-/* line 457, ../sass/partials/_nexus_style.sass */
-.flex-caption h2 { text-transform: uppercase; font-size: 36px; color: white; }
-/* line 462, ../sass/partials/_nexus_style.sass */
-.flex-caption h2 a:link, .flex-caption h2 a:visited { color: white; }
-/* line 464, ../sass/partials/_nexus_style.sass */
-.flex-caption p { font-size: 16px; }
-
-/* line 467, ../sass/partials/_nexus_style.sass */
-a.frmore { background: rgba(255, 255, 255, 0.2); display: block; text-transform: uppercase; color: white; width: 150px; border: 1px solid white; padding: 5px 0px; margin: 10px auto; font-weight: bold; color: white !important; }
-
-/* line 479, ../sass/partials/_nexus_style.sass */
-#preface-area { background: none repeat scroll 0 0 #ed564b; border-bottom: 5px solid #f96b61; border-top: 5px solid #f96b61; padding: 40px 0 20px; }
-
-/* line 485, ../sass/partials/_nexus_style.sass */
-.preface-block { color: white; text-align: center; }
-/* line 488, ../sass/partials/_nexus_style.sass */
-.preface-block .block > h2 { font-size: 24px; font-weight: bold; }
-
-/* line 492, ../sass/partials/_nexus_style.sass */
-#header-block, #footer-block { padding: 20px 0 0; }
-
-/* line 495, ../sass/partials/_nexus_style.sass */
-#bottom { padding: 20px 0px 40px 0px; background: #3b3b3b; border-top: 5px solid #ed564b; }
-
-/* line 500, ../sass/partials/_nexus_style.sass */
-.footer-block { color: #aaaaaa; }
-/* line 502, ../sass/partials/_nexus_style.sass */
-.footer-block .block > h2 { font-size: 16px; margin-bottom: 10px; padding: 10px 0px; color: white; text-transform: uppercase; }
-
-/* Footer */
-/* line 511, ../sass/partials/_nexus_style.sass */
-.site-footer { padding: 10px 0px; background: #292929; font-size: 12px; height: 100%; }
-
-/* line 517, ../sass/partials/_nexus_style.sass */
-.fcred { padding: 10px 0px; color: #bbbbbb; }
-/* line 521, ../sass/partials/_nexus_style.sass */
-.fcred a:link, .fcred a:visited { color: white; }
+/* line 3, ../sass/partials/_nexus_style.sass */
+html body { nowhitespace: afterproperty; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; line-height: 1; height: 100%; }
+/* line 9, ../sass/partials/_nexus_style.sass */
+html body #page { height: 100%; }
+/* line 11, ../sass/partials/_nexus_style.sass */
+html body #page #primary, html body #page #sidebar-first, html body #page #sidebar-second { padding-top: 20px; padding-bottom: 20px; }
+/* line 14, ../sass/partials/_nexus_style.sass */
+html body #page #primary { float: left; width: 100%; margin-right: -100%; }
+/* line 20, ../sass/partials/_nexus_style.sass */
+html body #page #sidebar-first .block, html body #page #sidebar-second .block { margin-bottom: 30px; }
+/* line 22, ../sass/partials/_nexus_style.sass */
+html body #page #sidebar-first .block > h2, html body #page #sidebar-second .block > h2 { font-size: 20px; color: black; margin-bottom: 15px; text-transform: uppercase; font-weight: bold; }
+/* line 28, ../sass/partials/_nexus_style.sass */
+html body #page .preface-block .block, html body #page .footer-block .block, html body #page .region-footer .block, html body #page .region-header .block, html body #page .region-content-top .block { margin-bottom: 30px; }
+/* line 34, ../sass/partials/_nexus_style.sass */
+html body #page #main-content { padding-top: 15px; }
+/* line 36, ../sass/partials/_nexus_style.sass */
+html body #page #main-content .two-sidebars .center, html body #page #main-content .aside-left .center { margin-left: 33%; }
+/* line 38, ../sass/partials/_nexus_style.sass */
+html body #page #main-content .two-sidebars .center, html body #page #main-content .aside-right .center { margin-right: 33%; }
+/* line 40, ../sass/partials/_nexus_style.sass */
+html body #page #main-content #header-block, html body #page #main-content #footer-block { padding: 20px 0 0; }
 
 /* =Content ----------------------------------------------- */
-/* line 527, ../sass/partials/_nexus_style.sass */
+/* line 47, ../sass/partials/_nexus_style.sass */
 .node h2.title a, h1.page-title { color: black; font-size: 36px; font-weight: bold; margin-bottom: 20px; margin-top: 10px; }
 
-/* line 534, ../sass/partials/_nexus_style.sass */
+/* line 54, ../sass/partials/_nexus_style.sass */
 #content .node-teaser { padding-bottom: 30px; border-bottom: 1px solid #dddddd; margin-bottom: 15px; }
 
-/* line 539, ../sass/partials/_nexus_style.sass */
+/* line 59, ../sass/partials/_nexus_style.sass */
 .node-teaser img { border: 1px solid #cccccc; padding: 6px; height: auto; max-width: 97.4%; margin: 0.5em 1em 0.5em 0; float: left; }
 
-/* line 547, ../sass/partials/_nexus_style.sass */
+/* line 67, ../sass/partials/_nexus_style.sass */
 .page-node #content-wrap img { border: 1px solid #cccccc; padding: 6px; height: auto; max-width: 97.4%; margin: 0.5em 1em 0.5em 0; }
 
-/* line 554, ../sass/partials/_nexus_style.sass */
+/* line 74, ../sass/partials/_nexus_style.sass */
 .region-content-top { margin-bottom: 20px; }
 
-/* line 557, ../sass/partials/_nexus_style.sass */
-#sidebar-first .block { margin-bottom: 30px; }
-/* line 559, ../sass/partials/_nexus_style.sass */
-#sidebar-first .block > h2 { font-size: 20px; color: black; margin-bottom: 15px; text-transform: uppercase; font-weight: bold; }
-
-/* line 565, ../sass/partials/_nexus_style.sass */
-#sidebar-second .block { margin-bottom: 30px; }
-/* line 567, ../sass/partials/_nexus_style.sass */
-#sidebar-second .block > h2 { font-size: 20px; color: black; margin-bottom: 15px; text-transform: uppercase; font-weight: bold; }
-
-/* line 574, ../sass/partials/_nexus_style.sass */
-.preface-block .block, .footer-block .block, .region-footer .block, .region-header .block, .region-content-top .block { margin-bottom: 30px; }
-
-/* -------------- Form Elements  ------------- */
-/* line 579, ../sass/partials/_nexus_style.sass */
-fieldset { background: white; border: 1px solid #cccccc; margin-top: 10px; margin-bottom: 32px; padding: 0 0 10px; position: relative; top: 12px; /* Offsets the negative margin of legends */ -khtml-border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
-
-/* line 593, ../sass/partials/_nexus_style.sass */
-.fieldset-wrapper { margin-top: 25px; }
-
-/* line 596, ../sass/partials/_nexus_style.sass */
-.node-form .vertical-tabs .fieldset-wrapper { margin-top: 0; }
-
-/* line 599, ../sass/partials/_nexus_style.sass */
-.filter-wrapper { top: 0; padding: 1em 0 0.2em; -khtml-border-radius-topright: 0; -khtml-border-radius-topleft: 0; -moz-border-radius-topright: 0; -moz-border-radius-topleft: 0; -webkit-border-top-left-radius: 0; -webkit-border-top-right-radius: 0; border-top-left-radius: 0; border-top-right-radius: 0; }
-
-/* line 611, ../sass/partials/_nexus_style.sass */
-.filter-help a { font-size: 0.857em; padding: 2px 20px 0; }
-
-/* line 615, ../sass/partials/_nexus_style.sass */
-.filter-wrapper .form-item { padding: 0 0 0.5em 0.5em; }
-/* line 616, ../sass/partials/_nexus_style.sass */
-.filter-wrapper .form-item label { margin-right: 10px; }
-
-/* line 620, ../sass/partials/_nexus_style.sass */
-.filter-guidelines { padding: 0 1.5em 0 0.5em; }
-
-/* line 624, ../sass/partials/_nexus_style.sass */
-fieldset.collapsed { background: transparent; -khtml-border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; }
-/* line 630, ../sass/partials/_nexus_style.sass */
-fieldset legend { background: #dbdbdb; border: 1px solid #cccccc; border-bottom: none; display: block; height: 2em; left: -1px; line-height: 2; padding: 0; position: absolute; text-indent: 10px; text-shadow: 0 1px 0 white; top: -12px; width: 100%; -khtml-border-radius-topleft: 4px; -moz-border-radius-topleft: 4px; -webkit-border-top-left-radius: 4px; border-top-left-radius: 4px; -khtml-border-radius-topright: 4px; -moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px; border-top-right-radius: 4px; }
-/* line 652, ../sass/partials/_nexus_style.sass */
-fieldset.collapsed legend { -khtml-border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
-/* line 657, ../sass/partials/_nexus_style.sass */
-fieldset .fieldset-wrapper { padding: 0 10px; }
-/* line 659, ../sass/partials/_nexus_style.sass */
-fieldset .fieldset-description { margin-top: 5px; margin-bottom: 1em; line-height: 1.4; font-style: italic; }
-
-/* line 665, ../sass/partials/_nexus_style.sass */
-input { margin: 2px 0; padding: 4px; font-size: 0.929em; }
-
-/* line 670, ../sass/partials/_nexus_style.sass */
-textarea { font-size: 0.929em; line-height: 1.5; }
-/* line 673, ../sass/partials/_nexus_style.sass */
-textarea.form-textarea { padding: 4px; }
-
-/* line 676, ../sass/partials/_nexus_style.sass */
-select.form-select { padding: 4px; }
-
-/* line 679, ../sass/partials/_nexus_style.sass */
-input.form-text, textarea.form-textarea, select.form-select { border: 1px solid #cccccc; }
-
-/* line 682, ../sass/partials/_nexus_style.sass */
-.password-suggestions ul li { margin-left: 1.2em; }
-
-/* line 685, ../sass/partials/_nexus_style.sass */
-.form-item { margin-bottom: 1em; margin-top: 2px; }
-/* line 688, ../sass/partials/_nexus_style.sass */
-.form-item label { font-size: 0.929em; }
-
-/* line 691, ../sass/partials/_nexus_style.sass */
-.form-type-radio label, .form-type-checkbox label { margin-left: 4px; }
-
-/* line 694, ../sass/partials/_nexus_style.sass */
-.form-type-radio .description, .form-type-checkbox .description { margin-left: 2px; }
-
-/* line 697, ../sass/partials/_nexus_style.sass */
-.form-actions { padding-top: 10px; }
-
-/* Contact Form */
-/* line 703, ../sass/partials/_nexus_style.sass */
-.contact-form #edit-name, .contact-form #edit-mail, .contact-form #edit-subject { width: 100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -khtml-border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
-/* line 712, ../sass/partials/_nexus_style.sass */
-.contact-form #edit-message { width: 100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -khtml-border-top-left-radius: 4px; -khtml-border-top-right-radius: 4px; -moz-border-radius-topleft: 4px; -moz-border-radius-topright: 4px; -webkit-border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; }
-/* line 725, ../sass/partials/_nexus_style.sass */
-.contact-form .resizable-textarea .grippie { width: 100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -khtml-border-bottom-left-radius: 4px; -khtml-border-bottom-right-radius: 4px; -moz-border-radius-bottomleft: 4px; -moz-border-radius-bottomright: 4px; -webkit-border-bottom-left-radius: 4px; -webkit-border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; }
-
-/* Comment form */
-/* line 742, ../sass/partials/_nexus_style.sass */
-.comment-form label { float: left; font-size: 0.929em; }
-/* line 745, ../sass/partials/_nexus_style.sass */
-.comment-form input, .comment-form .form-select { margin: 0; -khtml-border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
-/* line 751, ../sass/partials/_nexus_style.sass */
-.comment-form .form-type-textarea label { float: none; }
-/* line 753, ../sass/partials/_nexus_style.sass */
-.comment-form .form-item, .comment-form .form-radios, .comment-form .form-type-checkbox, .comment-form .form-select { margin-bottom: 10px; overflow: hidden; }
-/* line 756, ../sass/partials/_nexus_style.sass */
-.comment-form .form-type-checkbox, .comment-form .form-radios { margin-left: 120px; }
-/* line 758, ../sass/partials/_nexus_style.sass */
-.comment-form .form-type-checkbox label, .comment-form .form-radios label { float: none; margin-top: 0; }
-/* line 761, ../sass/partials/_nexus_style.sass */
-.comment-form input.form-file { width: auto; }
-/* line 763, ../sass/partials/_nexus_style.sass */
-.comment-form .form-text { display: block; margin: 0; width: 100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-/* line 770, ../sass/partials/_nexus_style.sass */
-.comment-form .form-item .description { font-size: 0.786em; line-height: 1.2; margin-left: 120px; }
-
-/* line 775, ../sass/partials/_nexus_style.sass */
-#content h2.comment-form { margin-bottom: 0.5em; }
-
-/* line 779, ../sass/partials/_nexus_style.sass */
-.comment-form .form-textarea { -khtml-border-radius-topleft: 4px; -khtml-border-radius-topright: 4px; -moz-border-radius-topleft: 4px; -moz-border-radius-topright: 4px; -webkit-border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; }
-/* line 788, ../sass/partials/_nexus_style.sass */
-.comment-form fieldset.filter-wrapper .fieldset-wrapper, .comment-form .text-format-wrapper .form-item { margin-top: 0; margin-bottom: 0; }
-
-/* line 793, ../sass/partials/_nexus_style.sass */
-.filter-wrapper label { width: auto; float: none; }
-/* line 796, ../sass/partials/_nexus_style.sass */
-.filter-wrapper .form-select { min-width: 120px; }
-
-/* line 799, ../sass/partials/_nexus_style.sass */
-.comment-form fieldset.filter-wrapper .tips { font-size: 0.786em; }
-
-/* line 802, ../sass/partials/_nexus_style.sass */
-#comment-body-add-more-wrapper .form-type-textarea label { margin-bottom: 0.4em; }
-
-/* line 805, ../sass/partials/_nexus_style.sass */
-#edit-actions input { margin-right: 0.6em; }
-
-/* Other Overrides */
-/* line 810, ../sass/partials/_nexus_style.sass */
-div.password-suggestions { border: 0; }
-
-/* line 813, ../sass/partials/_nexus_style.sass */
-.ui-widget-overlay { background: #222222; opacity: 0.7; }
-
-/* line 817, ../sass/partials/_nexus_style.sass */
-div.vertical-tabs .vertical-tabs-panes fieldset.vertical-tabs-pane { padding: 1em; }
-
-/* line 821, ../sass/partials/_nexus_style.sass */
-#forum .name { font-size: 1.083em; }
-/* line 823, ../sass/partials/_nexus_style.sass */
-#forum .description { font-size: 1em; }
-
-/* Form Buttons */
-/* line 828, ../sass/partials/_nexus_style.sass */
-button { /* IE10 */ background-image: -ms-linear-gradient(top, white 0%, #e3e3e3 100%); /* Mozilla Firefox */ background-image: -moz-linear-gradient(top, white 0%, #e3e3e3 100%); /* Opera */ background-image: -o-linear-gradient(top, white 0%, #e3e3e3 100%); /* Webkit (Safari/Chrome 10) */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(1, #e3e3e3)); /* Webkit (Chrome 11+) */ background-image: -webkit-linear-gradient(top, white 0%, #e3e3e3 100%); /* Proposed W3C Markup */ background-image: linear-gradient(top, #ffffff 0%, #e3e3e3 100%); /* IE6-9 */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E3E3E3'); border: 1px solid #dbdbdb; -moz-border-radius: 6px; -webkit-border-radius: 6px; -o-border-radius: 6px; -ms-border-radius: 6px; -khtml-border-radius: 6px; border-radius: 6px; -moz-box-shadow: inset 0 1px 0 0 white; -webkit-box-shadow: inset 0 1px 0 0 white; -o-box-shadow: inset 0 1px 0 0 white; box-shadow: inset 0 1px 0 0 white; color: #333333; text-shadow: 0 1px 0 white; position: relative; font-weight: bold; padding: 4px 0.8em 5px 0.8em; font-size: 13px; }
-
-/* line 862, ../sass/partials/_nexus_style.sass */
-input[type="submit"], input[type="reset"], input[type="button"] { /* IE10 */ background-image: -ms-linear-gradient(top, white 0%, #e3e3e3 100%); /* Mozilla Firefox */ background-image: -moz-linear-gradient(top, white 0%, #e3e3e3 100%); /* Opera */ background-image: -o-linear-gradient(top, white 0%, #e3e3e3 100%); /* Webkit (Safari/Chrome 10) */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(1, #e3e3e3)); /* Webkit (Chrome 11+) */ background-image: -webkit-linear-gradient(top, white 0%, #e3e3e3 100%); /* Proposed W3C Markup */ background-image: linear-gradient(top, #ffffff 0%, #e3e3e3 100%); /* IE6-9 */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E3E3E3'); border: 1px solid #dbdbdb; -moz-border-radius: 6px; -webkit-border-radius: 6px; -o-border-radius: 6px; -ms-border-radius: 6px; -khtml-border-radius: 6px; border-radius: 6px; -moz-box-shadow: inset 0 1px 0 0 white; -webkit-box-shadow: inset 0 1px 0 0 white; -o-box-shadow: inset 0 1px 0 0 white; box-shadow: inset 0 1px 0 0 white; color: #333333; text-shadow: 0 1px 0 white; position: relative; font-weight: bold; padding: 4px 0.8em 5px 0.8em; font-size: 13px; }
-
-/* line 895, ../sass/partials/_nexus_style.sass */
-button:hover { /* IE10 */ background-image: -ms-linear-gradient(top, #dbdbdb 0%, #f2f2f2 100%); /* Mozilla Firefox */ background-image: -moz-linear-gradient(top, #dbdbdb 0%, #f2f2f2 100%); /* Opera */ background-image: -o-linear-gradient(top, #dbdbdb 0%, #f2f2f2 100%); /* Webkit (Safari/Chrome 10) */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #dbdbdb), color-stop(1, #f2f2f2)); /* Webkit (Chrome 11+) */ background-image: -webkit-linear-gradient(top, #dbdbdb 0%, #f2f2f2 100%); /* Proposed W3C Markup */ background-image: linear-gradient(top, #dbdbdb 0%, #f2f2f2 100%); /* IE6-9 */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#DBDBDB', endColorstr='#F2F2F2'); -moz-border-radius: 6px; -webkit-border-radius: 6px; -o-border-radius: 6px; -ms-border-radius: 6px; -khtml-border-radius: 6px; border-radius: 6px; -moz-box-shadow: inset 0 1px 0 0 white; -webkit-box-shadow: inset 0 1px 0 0 white; -o-box-shadow: inset 0 1px 0 0 white; box-shadow: inset 0 1px 0 0 white; cursor: pointer; }
-
-/* line 923, ../sass/partials/_nexus_style.sass */
-input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover { /* IE10 */ background-image: -ms-linear-gradient(top, #dbdbdb 0%, #f2f2f2 100%); /* Mozilla Firefox */ background-image: -moz-linear-gradient(top, #dbdbdb 0%, #f2f2f2 100%); /* Opera */ background-image: -o-linear-gradient(top, #dbdbdb 0%, #f2f2f2 100%); /* Webkit (Safari/Chrome 10) */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #dbdbdb), color-stop(1, #f2f2f2)); /* Webkit (Chrome 11+) */ background-image: -webkit-linear-gradient(top, #dbdbdb 0%, #f2f2f2 100%); /* Proposed W3C Markup */ background-image: linear-gradient(top, #dbdbdb 0%, #f2f2f2 100%); /* IE6-9 */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#DBDBDB', endColorstr='#F2F2F2'); -moz-border-radius: 6px; -webkit-border-radius: 6px; -o-border-radius: 6px; -ms-border-radius: 6px; -khtml-border-radius: 6px; border-radius: 6px; -moz-box-shadow: inset 0 1px 0 0 white; -webkit-box-shadow: inset 0 1px 0 0 white; -o-box-shadow: inset 0 1px 0 0 white; box-shadow: inset 0 1px 0 0 white; cursor: pointer; }
-
-/* line 950, ../sass/partials/_nexus_style.sass */
-button.full-width { width: 100%; padding-left: 0 !important; padding-right: 0 !important; text-align: center; }
-
-/* line 957, ../sass/partials/_nexus_style.sass */
-input[type="submit"].full-width, input[type="reset"].full-width, input[type="button"].full-width { width: 100%; padding-left: 0 !important; padding-right: 0 !important; text-align: center; }
-
-/* line 963, ../sass/partials/_nexus_style.sass */
-#block-search-form { padding-bottom: 7px; }
-/* line 965, ../sass/partials/_nexus_style.sass */
-#block-search-form .content { margin-top: 0; }
-
-/* line 968, ../sass/partials/_nexus_style.sass */
-#search-form .form-item-keys label { display: block; }
-
-/* line 971, ../sass/partials/_nexus_style.sass */
-ol.search-results { padding-left: 0; }
-
-/* line 975, ../sass/partials/_nexus_style.sass */
-.search-results li { border-bottom: 1px solid #d3d7d9; padding-bottom: 0.4285em; margin-bottom: 0.5em; }
-/* line 979, ../sass/partials/_nexus_style.sass */
-.search-results li:last-child { border-bottom: none; padding-bottom: none; margin-bottom: 1em; }
-/* line 983, ../sass/partials/_nexus_style.sass */
-.search-results .search-snippet-info { padding-left: 0; }
-
-/* line 986, ../sass/partials/_nexus_style.sass */
-.meta { margin: 5px 0 10px 0; }
-/* line 988, ../sass/partials/_nexus_style.sass */
-.meta a { color: #999999; }
-/* line 990, ../sass/partials/_nexus_style.sass */
-.meta a:hover { color: black; }
-/* line 992, ../sass/partials/_nexus_style.sass */
-.meta li { display: inline; margin-right: 5px; margin-right: 10px; }
-/* line 996, ../sass/partials/_nexus_style.sass */
-.meta strong { font-weight: 600; color: #111111; }
-/* line 999, ../sass/partials/_nexus_style.sass */
-.meta li:last-child { margin-right: 0; padding-right: 0; background: none; }
-
-/* line 1004, ../sass/partials/_nexus_style.sass */
-.links li a { background-color: #e7e5e3; color: #100100; padding: 4px 5px; border-radius: 4px; text-shadow: 1px 1px white; font-weight: normal; }
-/* line 1011, ../sass/partials/_nexus_style.sass */
-.links li a:hover { background-color: #d7d5d3; color: #100101; }
-
-/*-------------------------------------------* */* Fix CKEditor style */*------------------------------------------- */
-/* line 1019, ../sass/partials/_nexus_style.sass */
-#content table.cke_editor { background: transparent; border: 0; }
-/* line 1022, ../sass/partials/_nexus_style.sass */
-#content table.cke_editor td { background: transparent; padding: 0; border: 0; }
-
-/*-------------------------------------------* */* Poll, Buttons, Form */*------------------------------------------- */
-/* line 1031, ../sass/partials/_nexus_style.sass */
-.poll .vote-form .choices { margin: 0; }
-/* line 1032, ../sass/partials/_nexus_style.sass */
-.poll .vote-form .choices .title { font-size: 14px; font-weight: normal; line-height: 2; }
-
-/* line 1038, ../sass/partials/_nexus_style.sass */
-.form-item label { font-size: 13px; font-weight: bold; }
-
-/*-------------------------------------------* */* Menus and item lists  */*------------------------------------------- */
-/* line 1046, ../sass/partials/_nexus_style.sass */
-.item-list ul { margin: 0; padding: 0 0 0 1.5385em; }
-/* line 1049, ../sass/partials/_nexus_style.sass */
-.item-list ul li { margin: 0; padding: 0; }
-
-/* line 1054, ../sass/partials/_nexus_style.sass */
-ul.menu li { margin: 0; padding: 0; }
-/* line 1057, ../sass/partials/_nexus_style.sass */
-ul.inline { clear: both; }
-/* line 1059, ../sass/partials/_nexus_style.sass */
-ul.inline li { margin: 0; padding: 0; }
-
-/*-------------------------------------------* */* Admin Tabs */*------------------------------------------- */
-/* line 1067, ../sass/partials/_nexus_style.sass */
-.tabs-wrapper { border-bottom: 1px solid #b7b7b7; margin: 0 0 5px 0; }
-
-/* line 1072, ../sass/partials/_nexus_style.sass */
-ul.primary { border: none; margin: 0; padding: 0; }
-/* line 1076, ../sass/partials/_nexus_style.sass */
-ul.primary li a { background: none; border: none; display: block; float: left; line-height: 1.5385em; margin: 0; padding: 0 1em; border-radius: 4px 4px 0 0; margin-right: 5px; }
-/* line 1086, ../sass/partials/_nexus_style.sass */
-ul.primary li a:hover, ul.primary li a.active { background: #666666; border: none; color: white; }
-/* line 1090, ../sass/partials/_nexus_style.sass */
-ul.primary li a:hover { background: #888888; text-decoration: none; }
-/* line 1093, ../sass/partials/_nexus_style.sass */
-ul.secondary { background: #666666; border-bottom: none; clear: both; margin: 0; padding: 0; }
-/* line 1099, ../sass/partials/_nexus_style.sass */
-ul.secondary li { border-right: none; }
-/* line 1101, ../sass/partials/_nexus_style.sass */
-ul.secondary li a { border: none; color: #cccccc; display: block; float: left; line-height: 1.5385em; padding: 0 1em; }
-/* line 1108, ../sass/partials/_nexus_style.sass */
-ul.secondary li a:link { border: none; color: #cccccc; display: block; float: left; line-height: 1.5385em; padding: 0 1em; }
-/* line 1115, ../sass/partials/_nexus_style.sass */
-ul.secondary li a:hover, ul.secondary li a.active { background: #888888; color: white; text-decoration: none; }
-/* line 1119, ../sass/partials/_nexus_style.sass */
-ul.secondary a.active { border-bottom: none; }
-/* line 1121, ../sass/partials/_nexus_style.sass */
-ul.inline, ul.links.inline { margin-left: 0; }
-
-/*-------------------------------------------* */* Tabs and Tags */*------------------------------------------- */
-/* line 1128, ../sass/partials/_nexus_style.sass */
-.field-name-field-tags { margin: 0 0 10px 0; }
-/* line 1130, ../sass/partials/_nexus_style.sass */
-.field-name-field-tags a { background: #ed564b; margin-right: 5px; margin-bottom: 5px; border-radius: 2px; color: white; padding: 2px 6px; }
-/* line 1137, ../sass/partials/_nexus_style.sass */
-.field-name-field-tags a:hover { background: #111111; color: white; }
-/* line 1140, ../sass/partials/_nexus_style.sass */
-.field-name-field-tags div { display: inline; }
-
-/*-------------------------------------------* */* Profile */*------------------------------------------- */
-/* line 1147, ../sass/partials/_nexus_style.sass */
-.profile { margin: 1.5385em 0; }
-/* line 1149, ../sass/partials/_nexus_style.sass */
-.profile dd { margin-bottom: 1.5385em; }
-/* line 1151, ../sass/partials/_nexus_style.sass */
-.profile h3 { border: none; }
-/* line 1153, ../sass/partials/_nexus_style.sass */
-.profile dt { margin-bottom: 0; }
-
-/* line 1156, ../sass/partials/_nexus_style.sass */
-.password-parent { width: 36em; }
-
-/* Comments */
-/* line 1161, ../sass/partials/_nexus_style.sass */
-.comment { margin-bottom: 20px; display: table; vertical-align: top; }
-/* line 1162, ../sass/partials/_nexus_style.sass */
-.comment h2.title { margin-bottom: 1em; }
-/* line 1164, ../sass/partials/_nexus_style.sass */
-.comment div.user-picture img { margin-left: 0; }
-/* line 1169, ../sass/partials/_nexus_style.sass */
-.comment .attribution { display: table-cell; padding: 0 35px 0 0; vertical-align: top; overflow: hidden; }
-/* line 1174, ../sass/partials/_nexus_style.sass */
-.comment .attribution img { margin: 0; border: 1px solid #d3d7d9; }
-/* line 1177, ../sass/partials/_nexus_style.sass */
-.comment .attribution .username { white-space: nowrap; }
-/* line 1180, ../sass/partials/_nexus_style.sass */
-.comment .comment-submitted p { margin: 4px 0; font-size: 1.071em; line-height: 1.2; }
-/* line 1184, ../sass/partials/_nexus_style.sass */
-.comment .comment-submitted .comment-time { font-size: 0.786em; }
-/* line 1186, ../sass/partials/_nexus_style.sass */
-.comment .comment-submitted .comment-permalink { font-size: 0.786em; text-transform: lowercase; }
-/* line 1189, ../sass/partials/_nexus_style.sass */
-.comment .content { font-size: 0.929em; line-height: 1.6; }
-/* line 1192, ../sass/partials/_nexus_style.sass */
-.comment .comment-arrow { background: url(images/comment-arrow.gif) no-repeat 0 center transparent; border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36px; margin-top: 15px; position: absolute; width: 22px; }
-/* line 1201, ../sass/partials/_nexus_style.sass */
-.comment .comment-text { padding: 0 25px 10px 35px; display: table-cell; vertical-align: top; position: relative; width: 100%; border-left: 1px solid #d3d7d9; }
-/* line 1208, ../sass/partials/_nexus_style.sass */
-.comment .indented { margin-left: 40px; }
-
-/* line 1211, ../sass/partials/_nexus_style.sass */
-.comment-unpublished { margin-right: 5px; padding: 5px 2px 5px 5px; }
-
-/* line 1215, ../sass/partials/_nexus_style.sass */
-.comment .comment-text .comment-arrow { border-left: 1px solid white; border-right: 1px solid white; }
-
-/*-------------------------------------------* */* Forum */*------------------------------------------- */
-/* line 1224, ../sass/partials/_nexus_style.sass */
-.field-name-taxonomy-forums div { display: inline; margin-top: 4px; }
-
-/* line 1230, ../sass/partials/_nexus_style.sass */
-#forum .title { font-size: 16px; }
-/* line 1232, ../sass/partials/_nexus_style.sass */
-#forum .submitted { font-size: 12px; font-family: Lucida Grande, Verdana, Arial, sans-serif; background: transparent; padding: 0; }
-/* line 1237, ../sass/partials/_nexus_style.sass */
-#forum .container { background: #a1a1a1; color: white; }
-/* line 1240, ../sass/partials/_nexus_style.sass */
-#forum .container a { color: black; font-weight: bold; }
-/* line 1243, ../sass/partials/_nexus_style.sass */
-#forum div.indent { margin-left: 2px; }
-
-/* line 1246, ../sass/partials/_nexus_style.sass */
-.forum-starter-picture { float: left; padding: 4px; border: 1px solid #d9d9d9; margin: 5px 7px 5px 0; }
-
-/* line 1253, ../sass/partials/_nexus_style.sass */
-#forum th { background: #434343; text-shadow: none; color: white; }
-/* line 1257, ../sass/partials/_nexus_style.sass */
-#forum th a { color: white; }
-/* line 1259, ../sass/partials/_nexus_style.sass */
-#forum td.forum .icon, #forum .icon div { background: url(images/no-new-posts.png) no-repeat; width: 35px; height: 35px; }
-/* line 1263, ../sass/partials/_nexus_style.sass */
-#forum .name a { font-size: 16px; }
-
-@media screen and (max-width: 768px) { /* line 1267, ../sass/partials/_nexus_style.sass */
-  html { font-size: 60%; }
-  /* line 1269, ../sass/partials/_nexus_style.sass */
-  h1#site-title { text-align: center; }
-  /* line 1271, ../sass/partials/_nexus_style.sass */
-  #site-logo { padding-top: 0; }
-  /* line 1273, ../sass/partials/_nexus_style.sass */
-  select.mnav { width: 100%; margin-bottom: 20px; }
-  /* line 1276, ../sass/partials/_nexus_style.sass */
-  #main-menu, .flex-caption { display: none; } }
-/* line 1280, ../sass/partials/_nexus_style.sass */
-.two-sidebars .center, .sidebar-left .center { margin-left: 33%; }
-
-/* line 1283, ../sass/partials/_nexus_style.sass */
-.two-sidebars .center, .sidebar-right .center { margin-right: 33%; }
-
-/* line 1286, ../sass/partials/_nexus_style.sass */
-#primary { float: left; width: 100%; margin-right: -100%; }
-
-/* line 1291, ../sass/partials/_nexus_style.sass */
+/* line 1, ../sass/partials/_dev.sass */
 body.grid { background: url('../images/grid.png?1397320676') 50% 0px repeat-y; }
 
-/* line 1293, ../sass/partials/_nexus_style.sass */
+/* line 4, ../sass/partials/_dev.sass */
 .button_grid { position: absolute; top: 100px; height: 40px; width: 40px; background: lightcoral; }
+
+/*set max img width */
+/* line 3, ../sass/partials/_fix_drupal.sass */
+img { max-width: 100%; }
+
+/*-------------------------------------------* */* Fix CKEditor style */*------------------------------------------- */
+/* line 10, ../sass/partials/_fix_drupal.sass */
+#content table.cke_editor { background: transparent; border: 0; }
+/* line 13, ../sass/partials/_fix_drupal.sass */
+#content table.cke_editor td { background: transparent; padding: 0; border: 0; }
+
+@media screen and (max-width: 768px) { /* line 2, ../sass/partials/_responsive_drupal.sass */
+  html { font-size: 60%; }
+  /* line 4, ../sass/partials/_responsive_drupal.sass */
+  h1#site-title { text-align: center; }
+  /* line 6, ../sass/partials/_responsive_drupal.sass */
+  #site-logo { padding-top: 0; }
+  /* line 8, ../sass/partials/_responsive_drupal.sass */
+  select.mnav { width: 100%; margin-bottom: 20px; }
+  /* line 11, ../sass/partials/_responsive_drupal.sass */
+  #main-menu, .flex-caption { display: none; } }
+/* line 1, ../sass/partials/_header.sass */
+#masthead { position: relative; }
+/* line 3, ../sass/partials/_header.sass */
+#masthead .site-branding { margin-bottom: 20px; }
+/* line 5, ../sass/partials/_header.sass */
+#masthead #site-logo { float: left; padding: 15px 15px 0 0; }
+/* line 8, ../sass/partials/_header.sass */
+#masthead h1#site-title { text-transform: uppercase; font-weight: 800; margin-top: 18px; clear: none; }
+/* line 14, ../sass/partials/_header.sass */
+#masthead h1#site-title a:link, #masthead h1#site-title a:visited { color: black; }
+
+/* line 1, ../sass/partials/_slide.sass */
+#slidebox { max-height: 550px; position: relative; background: black; }
+/* line 5, ../sass/partials/_slide.sass */
+#slidebox .doverlay { background: url('../images/overlay.png?1397205231'); position: absolute; width: 100%; height: 100%; left: 0px; top: 0px; z-index: 100; }
+/* line 13, ../sass/partials/_slide.sass */
+#slidebox img.grayscale { filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); filter: gray; -webkit-filter: grayscale(100%); }
+/* line 17, ../sass/partials/_slide.sass */
+#slidebox .flex-caption { width: 800px; position: absolute; top: 28%; left: 50%; margin-left: -400px; text-align: center; z-index: 120; color: white; }
+/* line 26, ../sass/partials/_slide.sass */
+#slidebox .flex-caption h2 { text-transform: uppercase; font-size: 36px; color: white; }
+/* line 31, ../sass/partials/_slide.sass */
+#slidebox .flex-caption h2 a:link, #slidebox .flex-caption h2 a:visited { color: white; }
+/* line 33, ../sass/partials/_slide.sass */
+#slidebox .flex-caption p { font-size: 16px; }
+/* line 35, ../sass/partials/_slide.sass */
+#slidebox a.frmore { background: rgba(255, 255, 255, 0.2); display: block; text-transform: uppercase; color: white; width: 150px; border: 1px solid white; padding: 5px 0px; margin: 10px auto; font-weight: bold; color: white !important; }
+
+/* line 1, ../sass/partials/_preface.sass */
+#preface-area { background: none repeat scroll 0 0 #ed564b; border-bottom: 5px solid #f96b61; border-top: 5px solid #f96b61; padding: 40px 0 20px; }
+/* line 6, ../sass/partials/_preface.sass */
+#preface-area .preface-block { color: white; text-align: center; }
+/* line 9, ../sass/partials/_preface.sass */
+#preface-area .preface-block .block > h2 { font-size: 24px; font-weight: bold; }
+
+/* line 1, ../sass/partials/_footer.sass */
+#bottom { padding: 20px 0px 40px 0px; background: #3b3b3b; border-top: 5px solid #ed564b; }
+
+/* line 5, ../sass/partials/_footer.sass */
+.footer-block { color: #aaaaaa; }
+/* line 7, ../sass/partials/_footer.sass */
+.footer-block .block > h2 { font-size: 16px; margin-bottom: 10px; padding: 10px 0px; color: white; text-transform: uppercase; }
+
+/* line 13, ../sass/partials/_footer.sass */
+.site-footer { padding: 10px 0px; background: #292929; font-size: 12px; height: 100%; }
+
+/* line 18, ../sass/partials/_footer.sass */
+.fcred { padding: 10px 0px; color: #bbbbbb; }
+/* line 22, ../sass/partials/_footer.sass */
+.fcred a:link, .fcred a:visited { color: white; }
