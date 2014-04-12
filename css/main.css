@@ -3869,4 +3869,4 @@ ul.inline, ul.links.inline { margin-left: 0; }
 body.grid { background: url('../images/grid.png?1397320676') 50% 0px repeat-y; }
 
 /* line 1293, ../sass/partials/_nexus_style.sass */
-.button_grid { position: absolute; top: 100px; height: 40px; width: 40px; color: azure; }
+.button_grid { position: absolute; top: 100px; height: 40px; width: 40px; background: lightcoral; }

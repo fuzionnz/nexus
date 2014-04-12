@@ -6,6 +6,7 @@ stylesheets[all][] = css/main.css
 stylesheets[all][] = css/flexslider.css
 scripts[] = js/bootstrap.js
 scripts[] = js/custom.js
+scripts[] = js/css_browser.js
 regions[sidebar_first]  = First Sidebar
 regions[sidebar_second] = Second Sidebar
 regions[top_bar]        = Top Bar
