@@ -3437,7 +3437,7 @@ h1#site-title a:link, h1#site-title a:visited { color: black; }
 
 /* Layout */
 /* line 417, ../sass/partials/_nexus_style.sass */
-#primary, #sidebar { padding-top: 20px; padding-bottom: 20px; }
+#primary, #sidebar-first, #sidebar-second { padding-top: 20px; padding-bottom: 20px; }
 
 /* line 421, ../sass/partials/_nexus_style.sass */
 #main-content { padding-top: 15px; }
@@ -3509,345 +3509,364 @@ a.frmore { background: rgba(255, 255, 255, 0.2); display: block; text-transform:
 .region-content-top { margin-bottom: 20px; }
 
 /* line 557, ../sass/partials/_nexus_style.sass */
-#sidebar .block { margin-bottom: 30px; }
+#sidebar-first .block { margin-bottom: 30px; }
 /* line 559, ../sass/partials/_nexus_style.sass */
-#sidebar .block > h2 { font-size: 20px; color: black; margin-bottom: 15px; text-transform: uppercase; font-weight: bold; }
+#sidebar-first .block > h2 { font-size: 20px; color: black; margin-bottom: 15px; text-transform: uppercase; font-weight: bold; }
 
-/* line 566, ../sass/partials/_nexus_style.sass */
+/* line 565, ../sass/partials/_nexus_style.sass */
+#sidebar-second .block { margin-bottom: 30px; }
+/* line 567, ../sass/partials/_nexus_style.sass */
+#sidebar-second .block > h2 { font-size: 20px; color: black; margin-bottom: 15px; text-transform: uppercase; font-weight: bold; }
+
+/* line 574, ../sass/partials/_nexus_style.sass */
 .preface-block .block, .footer-block .block, .region-footer .block, .region-header .block, .region-content-top .block { margin-bottom: 30px; }
 
 /* -------------- Form Elements  ------------- */
-/* line 571, ../sass/partials/_nexus_style.sass */
+/* line 579, ../sass/partials/_nexus_style.sass */
 fieldset { background: white; border: 1px solid #cccccc; margin-top: 10px; margin-bottom: 32px; padding: 0 0 10px; position: relative; top: 12px; /* Offsets the negative margin of legends */ -khtml-border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
 
-/* line 585, ../sass/partials/_nexus_style.sass */
+/* line 593, ../sass/partials/_nexus_style.sass */
 .fieldset-wrapper { margin-top: 25px; }
 
-/* line 588, ../sass/partials/_nexus_style.sass */
+/* line 596, ../sass/partials/_nexus_style.sass */
 .node-form .vertical-tabs .fieldset-wrapper { margin-top: 0; }
 
-/* line 591, ../sass/partials/_nexus_style.sass */
+/* line 599, ../sass/partials/_nexus_style.sass */
 .filter-wrapper { top: 0; padding: 1em 0 0.2em; -khtml-border-radius-topright: 0; -khtml-border-radius-topleft: 0; -moz-border-radius-topright: 0; -moz-border-radius-topleft: 0; -webkit-border-top-left-radius: 0; -webkit-border-top-right-radius: 0; border-top-left-radius: 0; border-top-right-radius: 0; }
 
-/* line 603, ../sass/partials/_nexus_style.sass */
+/* line 611, ../sass/partials/_nexus_style.sass */
 .filter-help a { font-size: 0.857em; padding: 2px 20px 0; }
 
-/* line 607, ../sass/partials/_nexus_style.sass */
+/* line 615, ../sass/partials/_nexus_style.sass */
 .filter-wrapper .form-item { padding: 0 0 0.5em 0.5em; }
-/* line 608, ../sass/partials/_nexus_style.sass */
+/* line 616, ../sass/partials/_nexus_style.sass */
 .filter-wrapper .form-item label { margin-right: 10px; }
 
-/* line 612, ../sass/partials/_nexus_style.sass */
+/* line 620, ../sass/partials/_nexus_style.sass */
 .filter-guidelines { padding: 0 1.5em 0 0.5em; }
 
-/* line 616, ../sass/partials/_nexus_style.sass */
+/* line 624, ../sass/partials/_nexus_style.sass */
 fieldset.collapsed { background: transparent; -khtml-border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; }
-/* line 622, ../sass/partials/_nexus_style.sass */
+/* line 630, ../sass/partials/_nexus_style.sass */
 fieldset legend { background: #dbdbdb; border: 1px solid #cccccc; border-bottom: none; display: block; height: 2em; left: -1px; line-height: 2; padding: 0; position: absolute; text-indent: 10px; text-shadow: 0 1px 0 white; top: -12px; width: 100%; -khtml-border-radius-topleft: 4px; -moz-border-radius-topleft: 4px; -webkit-border-top-left-radius: 4px; border-top-left-radius: 4px; -khtml-border-radius-topright: 4px; -moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px; border-top-right-radius: 4px; }
-/* line 644, ../sass/partials/_nexus_style.sass */
+/* line 652, ../sass/partials/_nexus_style.sass */
 fieldset.collapsed legend { -khtml-border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
-/* line 649, ../sass/partials/_nexus_style.sass */
+/* line 657, ../sass/partials/_nexus_style.sass */
 fieldset .fieldset-wrapper { padding: 0 10px; }
-/* line 651, ../sass/partials/_nexus_style.sass */
+/* line 659, ../sass/partials/_nexus_style.sass */
 fieldset .fieldset-description { margin-top: 5px; margin-bottom: 1em; line-height: 1.4; font-style: italic; }
 
-/* line 657, ../sass/partials/_nexus_style.sass */
+/* line 665, ../sass/partials/_nexus_style.sass */
 input { margin: 2px 0; padding: 4px; font-size: 0.929em; }
 
-/* line 662, ../sass/partials/_nexus_style.sass */
+/* line 670, ../sass/partials/_nexus_style.sass */
 textarea { font-size: 0.929em; line-height: 1.5; }
-/* line 665, ../sass/partials/_nexus_style.sass */
+/* line 673, ../sass/partials/_nexus_style.sass */
 textarea.form-textarea { padding: 4px; }
 
-/* line 668, ../sass/partials/_nexus_style.sass */
+/* line 676, ../sass/partials/_nexus_style.sass */
 select.form-select { padding: 4px; }
 
-/* line 671, ../sass/partials/_nexus_style.sass */
+/* line 679, ../sass/partials/_nexus_style.sass */
 input.form-text, textarea.form-textarea, select.form-select { border: 1px solid #cccccc; }
 
-/* line 674, ../sass/partials/_nexus_style.sass */
+/* line 682, ../sass/partials/_nexus_style.sass */
 .password-suggestions ul li { margin-left: 1.2em; }
 
-/* line 677, ../sass/partials/_nexus_style.sass */
+/* line 685, ../sass/partials/_nexus_style.sass */
 .form-item { margin-bottom: 1em; margin-top: 2px; }
-/* line 680, ../sass/partials/_nexus_style.sass */
+/* line 688, ../sass/partials/_nexus_style.sass */
 .form-item label { font-size: 0.929em; }
 
-/* line 683, ../sass/partials/_nexus_style.sass */
+/* line 691, ../sass/partials/_nexus_style.sass */
 .form-type-radio label, .form-type-checkbox label { margin-left: 4px; }
 
-/* line 686, ../sass/partials/_nexus_style.sass */
+/* line 694, ../sass/partials/_nexus_style.sass */
 .form-type-radio .description, .form-type-checkbox .description { margin-left: 2px; }
 
-/* line 689, ../sass/partials/_nexus_style.sass */
+/* line 697, ../sass/partials/_nexus_style.sass */
 .form-actions { padding-top: 10px; }
 
 /* Contact Form */
-/* line 695, ../sass/partials/_nexus_style.sass */
+/* line 703, ../sass/partials/_nexus_style.sass */
 .contact-form #edit-name, .contact-form #edit-mail, .contact-form #edit-subject { width: 100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -khtml-border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
-/* line 704, ../sass/partials/_nexus_style.sass */
+/* line 712, ../sass/partials/_nexus_style.sass */
 .contact-form #edit-message { width: 100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -khtml-border-top-left-radius: 4px; -khtml-border-top-right-radius: 4px; -moz-border-radius-topleft: 4px; -moz-border-radius-topright: 4px; -webkit-border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; }
-/* line 717, ../sass/partials/_nexus_style.sass */
+/* line 725, ../sass/partials/_nexus_style.sass */
 .contact-form .resizable-textarea .grippie { width: 100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -khtml-border-bottom-left-radius: 4px; -khtml-border-bottom-right-radius: 4px; -moz-border-radius-bottomleft: 4px; -moz-border-radius-bottomright: 4px; -webkit-border-bottom-left-radius: 4px; -webkit-border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; }
 
 /* Comment form */
-/* line 734, ../sass/partials/_nexus_style.sass */
+/* line 742, ../sass/partials/_nexus_style.sass */
 .comment-form label { float: left; font-size: 0.929em; }
-/* line 737, ../sass/partials/_nexus_style.sass */
-.comment-form input, .comment-form .form-select { margin: 0; -khtml-border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
-/* line 743, ../sass/partials/_nexus_style.sass */
-.comment-form .form-type-textarea label { float: none; }
 /* line 745, ../sass/partials/_nexus_style.sass */
-.comment-form .form-item, .comment-form .form-radios, .comment-form .form-type-checkbox, .comment-form .form-select { margin-bottom: 10px; overflow: hidden; }
-/* line 748, ../sass/partials/_nexus_style.sass */
-.comment-form .form-type-checkbox, .comment-form .form-radios { margin-left: 120px; }
-/* line 750, ../sass/partials/_nexus_style.sass */
-.comment-form .form-type-checkbox label, .comment-form .form-radios label { float: none; margin-top: 0; }
+.comment-form input, .comment-form .form-select { margin: 0; -khtml-border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
+/* line 751, ../sass/partials/_nexus_style.sass */
+.comment-form .form-type-textarea label { float: none; }
 /* line 753, ../sass/partials/_nexus_style.sass */
+.comment-form .form-item, .comment-form .form-radios, .comment-form .form-type-checkbox, .comment-form .form-select { margin-bottom: 10px; overflow: hidden; }
+/* line 756, ../sass/partials/_nexus_style.sass */
+.comment-form .form-type-checkbox, .comment-form .form-radios { margin-left: 120px; }
+/* line 758, ../sass/partials/_nexus_style.sass */
+.comment-form .form-type-checkbox label, .comment-form .form-radios label { float: none; margin-top: 0; }
+/* line 761, ../sass/partials/_nexus_style.sass */
 .comment-form input.form-file { width: auto; }
-/* line 755, ../sass/partials/_nexus_style.sass */
+/* line 763, ../sass/partials/_nexus_style.sass */
 .comment-form .form-text { display: block; margin: 0; width: 100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-/* line 762, ../sass/partials/_nexus_style.sass */
+/* line 770, ../sass/partials/_nexus_style.sass */
 .comment-form .form-item .description { font-size: 0.786em; line-height: 1.2; margin-left: 120px; }
 
-/* line 767, ../sass/partials/_nexus_style.sass */
+/* line 775, ../sass/partials/_nexus_style.sass */
 #content h2.comment-form { margin-bottom: 0.5em; }
 
-/* line 771, ../sass/partials/_nexus_style.sass */
+/* line 779, ../sass/partials/_nexus_style.sass */
 .comment-form .form-textarea { -khtml-border-radius-topleft: 4px; -khtml-border-radius-topright: 4px; -moz-border-radius-topleft: 4px; -moz-border-radius-topright: 4px; -webkit-border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; }
-/* line 780, ../sass/partials/_nexus_style.sass */
+/* line 788, ../sass/partials/_nexus_style.sass */
 .comment-form fieldset.filter-wrapper .fieldset-wrapper, .comment-form .text-format-wrapper .form-item { margin-top: 0; margin-bottom: 0; }
 
-/* line 785, ../sass/partials/_nexus_style.sass */
+/* line 793, ../sass/partials/_nexus_style.sass */
 .filter-wrapper label { width: auto; float: none; }
-/* line 788, ../sass/partials/_nexus_style.sass */
+/* line 796, ../sass/partials/_nexus_style.sass */
 .filter-wrapper .form-select { min-width: 120px; }
 
-/* line 791, ../sass/partials/_nexus_style.sass */
+/* line 799, ../sass/partials/_nexus_style.sass */
 .comment-form fieldset.filter-wrapper .tips { font-size: 0.786em; }
 
-/* line 794, ../sass/partials/_nexus_style.sass */
+/* line 802, ../sass/partials/_nexus_style.sass */
 #comment-body-add-more-wrapper .form-type-textarea label { margin-bottom: 0.4em; }
 
-/* line 797, ../sass/partials/_nexus_style.sass */
+/* line 805, ../sass/partials/_nexus_style.sass */
 #edit-actions input { margin-right: 0.6em; }
 
 /* Other Overrides */
-/* line 802, ../sass/partials/_nexus_style.sass */
+/* line 810, ../sass/partials/_nexus_style.sass */
 div.password-suggestions { border: 0; }
 
-/* line 805, ../sass/partials/_nexus_style.sass */
+/* line 813, ../sass/partials/_nexus_style.sass */
 .ui-widget-overlay { background: #222222; opacity: 0.7; }
 
-/* line 809, ../sass/partials/_nexus_style.sass */
+/* line 817, ../sass/partials/_nexus_style.sass */
 div.vertical-tabs .vertical-tabs-panes fieldset.vertical-tabs-pane { padding: 1em; }
 
-/* line 813, ../sass/partials/_nexus_style.sass */
+/* line 821, ../sass/partials/_nexus_style.sass */
 #forum .name { font-size: 1.083em; }
-/* line 815, ../sass/partials/_nexus_style.sass */
+/* line 823, ../sass/partials/_nexus_style.sass */
 #forum .description { font-size: 1em; }
 
 /* Form Buttons */
-/* line 820, ../sass/partials/_nexus_style.sass */
+/* line 828, ../sass/partials/_nexus_style.sass */
 button { /* IE10 */ background-image: -ms-linear-gradient(top, white 0%, #e3e3e3 100%); /* Mozilla Firefox */ background-image: -moz-linear-gradient(top, white 0%, #e3e3e3 100%); /* Opera */ background-image: -o-linear-gradient(top, white 0%, #e3e3e3 100%); /* Webkit (Safari/Chrome 10) */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(1, #e3e3e3)); /* Webkit (Chrome 11+) */ background-image: -webkit-linear-gradient(top, white 0%, #e3e3e3 100%); /* Proposed W3C Markup */ background-image: linear-gradient(top, #ffffff 0%, #e3e3e3 100%); /* IE6-9 */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E3E3E3'); border: 1px solid #dbdbdb; -moz-border-radius: 6px; -webkit-border-radius: 6px; -o-border-radius: 6px; -ms-border-radius: 6px; -khtml-border-radius: 6px; border-radius: 6px; -moz-box-shadow: inset 0 1px 0 0 white; -webkit-box-shadow: inset 0 1px 0 0 white; -o-box-shadow: inset 0 1px 0 0 white; box-shadow: inset 0 1px 0 0 white; color: #333333; text-shadow: 0 1px 0 white; position: relative; font-weight: bold; padding: 4px 0.8em 5px 0.8em; font-size: 13px; }
 
-/* line 854, ../sass/partials/_nexus_style.sass */
+/* line 862, ../sass/partials/_nexus_style.sass */
 input[type="submit"], input[type="reset"], input[type="button"] { /* IE10 */ background-image: -ms-linear-gradient(top, white 0%, #e3e3e3 100%); /* Mozilla Firefox */ background-image: -moz-linear-gradient(top, white 0%, #e3e3e3 100%); /* Opera */ background-image: -o-linear-gradient(top, white 0%, #e3e3e3 100%); /* Webkit (Safari/Chrome 10) */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(1, #e3e3e3)); /* Webkit (Chrome 11+) */ background-image: -webkit-linear-gradient(top, white 0%, #e3e3e3 100%); /* Proposed W3C Markup */ background-image: linear-gradient(top, #ffffff 0%, #e3e3e3 100%); /* IE6-9 */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E3E3E3'); border: 1px solid #dbdbdb; -moz-border-radius: 6px; -webkit-border-radius: 6px; -o-border-radius: 6px; -ms-border-radius: 6px; -khtml-border-radius: 6px; border-radius: 6px; -moz-box-shadow: inset 0 1px 0 0 white; -webkit-box-shadow: inset 0 1px 0 0 white; -o-box-shadow: inset 0 1px 0 0 white; box-shadow: inset 0 1px 0 0 white; color: #333333; text-shadow: 0 1px 0 white; position: relative; font-weight: bold; padding: 4px 0.8em 5px 0.8em; font-size: 13px; }
 
-/* line 887, ../sass/partials/_nexus_style.sass */
+/* line 895, ../sass/partials/_nexus_style.sass */
 button:hover { /* IE10 */ background-image: -ms-linear-gradient(top, #dbdbdb 0%, #f2f2f2 100%); /* Mozilla Firefox */ background-image: -moz-linear-gradient(top, #dbdbdb 0%, #f2f2f2 100%); /* Opera */ background-image: -o-linear-gradient(top, #dbdbdb 0%, #f2f2f2 100%); /* Webkit (Safari/Chrome 10) */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #dbdbdb), color-stop(1, #f2f2f2)); /* Webkit (Chrome 11+) */ background-image: -webkit-linear-gradient(top, #dbdbdb 0%, #f2f2f2 100%); /* Proposed W3C Markup */ background-image: linear-gradient(top, #dbdbdb 0%, #f2f2f2 100%); /* IE6-9 */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#DBDBDB', endColorstr='#F2F2F2'); -moz-border-radius: 6px; -webkit-border-radius: 6px; -o-border-radius: 6px; -ms-border-radius: 6px; -khtml-border-radius: 6px; border-radius: 6px; -moz-box-shadow: inset 0 1px 0 0 white; -webkit-box-shadow: inset 0 1px 0 0 white; -o-box-shadow: inset 0 1px 0 0 white; box-shadow: inset 0 1px 0 0 white; cursor: pointer; }
 
-/* line 915, ../sass/partials/_nexus_style.sass */
+/* line 923, ../sass/partials/_nexus_style.sass */
 input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover { /* IE10 */ background-image: -ms-linear-gradient(top, #dbdbdb 0%, #f2f2f2 100%); /* Mozilla Firefox */ background-image: -moz-linear-gradient(top, #dbdbdb 0%, #f2f2f2 100%); /* Opera */ background-image: -o-linear-gradient(top, #dbdbdb 0%, #f2f2f2 100%); /* Webkit (Safari/Chrome 10) */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #dbdbdb), color-stop(1, #f2f2f2)); /* Webkit (Chrome 11+) */ background-image: -webkit-linear-gradient(top, #dbdbdb 0%, #f2f2f2 100%); /* Proposed W3C Markup */ background-image: linear-gradient(top, #dbdbdb 0%, #f2f2f2 100%); /* IE6-9 */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#DBDBDB', endColorstr='#F2F2F2'); -moz-border-radius: 6px; -webkit-border-radius: 6px; -o-border-radius: 6px; -ms-border-radius: 6px; -khtml-border-radius: 6px; border-radius: 6px; -moz-box-shadow: inset 0 1px 0 0 white; -webkit-box-shadow: inset 0 1px 0 0 white; -o-box-shadow: inset 0 1px 0 0 white; box-shadow: inset 0 1px 0 0 white; cursor: pointer; }
 
-/* line 942, ../sass/partials/_nexus_style.sass */
+/* line 950, ../sass/partials/_nexus_style.sass */
 button.full-width { width: 100%; padding-left: 0 !important; padding-right: 0 !important; text-align: center; }
 
-/* line 949, ../sass/partials/_nexus_style.sass */
+/* line 957, ../sass/partials/_nexus_style.sass */
 input[type="submit"].full-width, input[type="reset"].full-width, input[type="button"].full-width { width: 100%; padding-left: 0 !important; padding-right: 0 !important; text-align: center; }
 
-/* line 955, ../sass/partials/_nexus_style.sass */
+/* line 963, ../sass/partials/_nexus_style.sass */
 #block-search-form { padding-bottom: 7px; }
-/* line 957, ../sass/partials/_nexus_style.sass */
+/* line 965, ../sass/partials/_nexus_style.sass */
 #block-search-form .content { margin-top: 0; }
 
-/* line 960, ../sass/partials/_nexus_style.sass */
+/* line 968, ../sass/partials/_nexus_style.sass */
 #search-form .form-item-keys label { display: block; }
 
-/* line 963, ../sass/partials/_nexus_style.sass */
+/* line 971, ../sass/partials/_nexus_style.sass */
 ol.search-results { padding-left: 0; }
 
-/* line 967, ../sass/partials/_nexus_style.sass */
-.search-results li { border-bottom: 1px solid #d3d7d9; padding-bottom: 0.4285em; margin-bottom: 0.5em; }
-/* line 971, ../sass/partials/_nexus_style.sass */
-.search-results li:last-child { border-bottom: none; padding-bottom: none; margin-bottom: 1em; }
 /* line 975, ../sass/partials/_nexus_style.sass */
+.search-results li { border-bottom: 1px solid #d3d7d9; padding-bottom: 0.4285em; margin-bottom: 0.5em; }
+/* line 979, ../sass/partials/_nexus_style.sass */
+.search-results li:last-child { border-bottom: none; padding-bottom: none; margin-bottom: 1em; }
+/* line 983, ../sass/partials/_nexus_style.sass */
 .search-results .search-snippet-info { padding-left: 0; }
 
-/* line 978, ../sass/partials/_nexus_style.sass */
+/* line 986, ../sass/partials/_nexus_style.sass */
 .meta { margin: 5px 0 10px 0; }
-/* line 980, ../sass/partials/_nexus_style.sass */
-.meta a { color: #999999; }
-/* line 982, ../sass/partials/_nexus_style.sass */
-.meta a:hover { color: black; }
-/* line 984, ../sass/partials/_nexus_style.sass */
-.meta li { display: inline; margin-right: 5px; margin-right: 10px; }
 /* line 988, ../sass/partials/_nexus_style.sass */
+.meta a { color: #999999; }
+/* line 990, ../sass/partials/_nexus_style.sass */
+.meta a:hover { color: black; }
+/* line 992, ../sass/partials/_nexus_style.sass */
+.meta li { display: inline; margin-right: 5px; margin-right: 10px; }
+/* line 996, ../sass/partials/_nexus_style.sass */
 .meta strong { font-weight: 600; color: #111111; }
-/* line 991, ../sass/partials/_nexus_style.sass */
+/* line 999, ../sass/partials/_nexus_style.sass */
 .meta li:last-child { margin-right: 0; padding-right: 0; background: none; }
 
-/* line 996, ../sass/partials/_nexus_style.sass */
+/* line 1004, ../sass/partials/_nexus_style.sass */
 .links li a { background-color: #e7e5e3; color: #100100; padding: 4px 5px; border-radius: 4px; text-shadow: 1px 1px white; font-weight: normal; }
-/* line 1003, ../sass/partials/_nexus_style.sass */
+/* line 1011, ../sass/partials/_nexus_style.sass */
 .links li a:hover { background-color: #d7d5d3; color: #100101; }
 
 /*-------------------------------------------* */* Fix CKEditor style */*------------------------------------------- */
-/* line 1011, ../sass/partials/_nexus_style.sass */
+/* line 1019, ../sass/partials/_nexus_style.sass */
 #content table.cke_editor { background: transparent; border: 0; }
-/* line 1014, ../sass/partials/_nexus_style.sass */
+/* line 1022, ../sass/partials/_nexus_style.sass */
 #content table.cke_editor td { background: transparent; padding: 0; border: 0; }
 
 /*-------------------------------------------* */* Poll, Buttons, Form */*------------------------------------------- */
-/* line 1023, ../sass/partials/_nexus_style.sass */
+/* line 1031, ../sass/partials/_nexus_style.sass */
 .poll .vote-form .choices { margin: 0; }
-/* line 1024, ../sass/partials/_nexus_style.sass */
+/* line 1032, ../sass/partials/_nexus_style.sass */
 .poll .vote-form .choices .title { font-size: 14px; font-weight: normal; line-height: 2; }
 
-/* line 1030, ../sass/partials/_nexus_style.sass */
+/* line 1038, ../sass/partials/_nexus_style.sass */
 .form-item label { font-size: 13px; font-weight: bold; }
 
 /*-------------------------------------------* */* Menus and item lists  */*------------------------------------------- */
-/* line 1038, ../sass/partials/_nexus_style.sass */
+/* line 1046, ../sass/partials/_nexus_style.sass */
 .item-list ul { margin: 0; padding: 0 0 0 1.5385em; }
-/* line 1041, ../sass/partials/_nexus_style.sass */
+/* line 1049, ../sass/partials/_nexus_style.sass */
 .item-list ul li { margin: 0; padding: 0; }
 
-/* line 1046, ../sass/partials/_nexus_style.sass */
+/* line 1054, ../sass/partials/_nexus_style.sass */
 ul.menu li { margin: 0; padding: 0; }
-/* line 1049, ../sass/partials/_nexus_style.sass */
+/* line 1057, ../sass/partials/_nexus_style.sass */
 ul.inline { clear: both; }
-/* line 1051, ../sass/partials/_nexus_style.sass */
+/* line 1059, ../sass/partials/_nexus_style.sass */
 ul.inline li { margin: 0; padding: 0; }
 
 /*-------------------------------------------* */* Admin Tabs */*------------------------------------------- */
-/* line 1059, ../sass/partials/_nexus_style.sass */
+/* line 1067, ../sass/partials/_nexus_style.sass */
 .tabs-wrapper { border-bottom: 1px solid #b7b7b7; margin: 0 0 5px 0; }
 
-/* line 1064, ../sass/partials/_nexus_style.sass */
+/* line 1072, ../sass/partials/_nexus_style.sass */
 ul.primary { border: none; margin: 0; padding: 0; }
-/* line 1068, ../sass/partials/_nexus_style.sass */
+/* line 1076, ../sass/partials/_nexus_style.sass */
 ul.primary li a { background: none; border: none; display: block; float: left; line-height: 1.5385em; margin: 0; padding: 0 1em; border-radius: 4px 4px 0 0; margin-right: 5px; }
-/* line 1078, ../sass/partials/_nexus_style.sass */
+/* line 1086, ../sass/partials/_nexus_style.sass */
 ul.primary li a:hover, ul.primary li a.active { background: #666666; border: none; color: white; }
-/* line 1082, ../sass/partials/_nexus_style.sass */
+/* line 1090, ../sass/partials/_nexus_style.sass */
 ul.primary li a:hover { background: #888888; text-decoration: none; }
-/* line 1085, ../sass/partials/_nexus_style.sass */
-ul.secondary { background: #666666; border-bottom: none; clear: both; margin: 0; padding: 0; }
-/* line 1091, ../sass/partials/_nexus_style.sass */
-ul.secondary li { border-right: none; }
 /* line 1093, ../sass/partials/_nexus_style.sass */
+ul.secondary { background: #666666; border-bottom: none; clear: both; margin: 0; padding: 0; }
+/* line 1099, ../sass/partials/_nexus_style.sass */
+ul.secondary li { border-right: none; }
+/* line 1101, ../sass/partials/_nexus_style.sass */
 ul.secondary li a { border: none; color: #cccccc; display: block; float: left; line-height: 1.5385em; padding: 0 1em; }
-/* line 1100, ../sass/partials/_nexus_style.sass */
+/* line 1108, ../sass/partials/_nexus_style.sass */
 ul.secondary li a:link { border: none; color: #cccccc; display: block; float: left; line-height: 1.5385em; padding: 0 1em; }
-/* line 1107, ../sass/partials/_nexus_style.sass */
+/* line 1115, ../sass/partials/_nexus_style.sass */
 ul.secondary li a:hover, ul.secondary li a.active { background: #888888; color: white; text-decoration: none; }
-/* line 1111, ../sass/partials/_nexus_style.sass */
+/* line 1119, ../sass/partials/_nexus_style.sass */
 ul.secondary a.active { border-bottom: none; }
-/* line 1113, ../sass/partials/_nexus_style.sass */
+/* line 1121, ../sass/partials/_nexus_style.sass */
 ul.inline, ul.links.inline { margin-left: 0; }
 
 /*-------------------------------------------* */* Tabs and Tags */*------------------------------------------- */
-/* line 1120, ../sass/partials/_nexus_style.sass */
+/* line 1128, ../sass/partials/_nexus_style.sass */
 .field-name-field-tags { margin: 0 0 10px 0; }
-/* line 1122, ../sass/partials/_nexus_style.sass */
+/* line 1130, ../sass/partials/_nexus_style.sass */
 .field-name-field-tags a { background: #ed564b; margin-right: 5px; margin-bottom: 5px; border-radius: 2px; color: white; padding: 2px 6px; }
-/* line 1129, ../sass/partials/_nexus_style.sass */
+/* line 1137, ../sass/partials/_nexus_style.sass */
 .field-name-field-tags a:hover { background: #111111; color: white; }
-/* line 1132, ../sass/partials/_nexus_style.sass */
+/* line 1140, ../sass/partials/_nexus_style.sass */
 .field-name-field-tags div { display: inline; }
 
 /*-------------------------------------------* */* Profile */*------------------------------------------- */
-/* line 1139, ../sass/partials/_nexus_style.sass */
+/* line 1147, ../sass/partials/_nexus_style.sass */
 .profile { margin: 1.5385em 0; }
-/* line 1141, ../sass/partials/_nexus_style.sass */
+/* line 1149, ../sass/partials/_nexus_style.sass */
 .profile dd { margin-bottom: 1.5385em; }
-/* line 1143, ../sass/partials/_nexus_style.sass */
+/* line 1151, ../sass/partials/_nexus_style.sass */
 .profile h3 { border: none; }
-/* line 1145, ../sass/partials/_nexus_style.sass */
+/* line 1153, ../sass/partials/_nexus_style.sass */
 .profile dt { margin-bottom: 0; }
 
-/* line 1148, ../sass/partials/_nexus_style.sass */
+/* line 1156, ../sass/partials/_nexus_style.sass */
 .password-parent { width: 36em; }
 
 /* Comments */
-/* line 1153, ../sass/partials/_nexus_style.sass */
-.comment { margin-bottom: 20px; display: table; vertical-align: top; }
-/* line 1154, ../sass/partials/_nexus_style.sass */
-.comment h2.title { margin-bottom: 1em; }
-/* line 1156, ../sass/partials/_nexus_style.sass */
-.comment div.user-picture img { margin-left: 0; }
 /* line 1161, ../sass/partials/_nexus_style.sass */
-.comment .attribution { display: table-cell; padding: 0 35px 0 0; vertical-align: top; overflow: hidden; }
-/* line 1166, ../sass/partials/_nexus_style.sass */
-.comment .attribution img { margin: 0; border: 1px solid #d3d7d9; }
+.comment { margin-bottom: 20px; display: table; vertical-align: top; }
+/* line 1162, ../sass/partials/_nexus_style.sass */
+.comment h2.title { margin-bottom: 1em; }
+/* line 1164, ../sass/partials/_nexus_style.sass */
+.comment div.user-picture img { margin-left: 0; }
 /* line 1169, ../sass/partials/_nexus_style.sass */
+.comment .attribution { display: table-cell; padding: 0 35px 0 0; vertical-align: top; overflow: hidden; }
+/* line 1174, ../sass/partials/_nexus_style.sass */
+.comment .attribution img { margin: 0; border: 1px solid #d3d7d9; }
+/* line 1177, ../sass/partials/_nexus_style.sass */
 .comment .attribution .username { white-space: nowrap; }
-/* line 1172, ../sass/partials/_nexus_style.sass */
+/* line 1180, ../sass/partials/_nexus_style.sass */
 .comment .comment-submitted p { margin: 4px 0; font-size: 1.071em; line-height: 1.2; }
-/* line 1176, ../sass/partials/_nexus_style.sass */
-.comment .comment-submitted .comment-time { font-size: 0.786em; }
-/* line 1178, ../sass/partials/_nexus_style.sass */
-.comment .comment-submitted .comment-permalink { font-size: 0.786em; text-transform: lowercase; }
-/* line 1181, ../sass/partials/_nexus_style.sass */
-.comment .content { font-size: 0.929em; line-height: 1.6; }
 /* line 1184, ../sass/partials/_nexus_style.sass */
+.comment .comment-submitted .comment-time { font-size: 0.786em; }
+/* line 1186, ../sass/partials/_nexus_style.sass */
+.comment .comment-submitted .comment-permalink { font-size: 0.786em; text-transform: lowercase; }
+/* line 1189, ../sass/partials/_nexus_style.sass */
+.comment .content { font-size: 0.929em; line-height: 1.6; }
+/* line 1192, ../sass/partials/_nexus_style.sass */
 .comment .comment-arrow { background: url(images/comment-arrow.gif) no-repeat 0 center transparent; border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36px; margin-top: 15px; position: absolute; width: 22px; }
-/* line 1193, ../sass/partials/_nexus_style.sass */
+/* line 1201, ../sass/partials/_nexus_style.sass */
 .comment .comment-text { padding: 0 25px 10px 35px; display: table-cell; vertical-align: top; position: relative; width: 100%; border-left: 1px solid #d3d7d9; }
-/* line 1200, ../sass/partials/_nexus_style.sass */
+/* line 1208, ../sass/partials/_nexus_style.sass */
 .comment .indented { margin-left: 40px; }
 
-/* line 1203, ../sass/partials/_nexus_style.sass */
+/* line 1211, ../sass/partials/_nexus_style.sass */
 .comment-unpublished { margin-right: 5px; padding: 5px 2px 5px 5px; }
 
-/* line 1207, ../sass/partials/_nexus_style.sass */
+/* line 1215, ../sass/partials/_nexus_style.sass */
 .comment .comment-text .comment-arrow { border-left: 1px solid white; border-right: 1px solid white; }
 
 /*-------------------------------------------* */* Forum */*------------------------------------------- */
-/* line 1216, ../sass/partials/_nexus_style.sass */
+/* line 1224, ../sass/partials/_nexus_style.sass */
 .field-name-taxonomy-forums div { display: inline; margin-top: 4px; }
 
-/* line 1222, ../sass/partials/_nexus_style.sass */
+/* line 1230, ../sass/partials/_nexus_style.sass */
 #forum .title { font-size: 16px; }
-/* line 1224, ../sass/partials/_nexus_style.sass */
-#forum .submitted { font-size: 12px; font-family: Lucida Grande, Verdana, Arial, sans-serif; background: transparent; padding: 0; }
-/* line 1229, ../sass/partials/_nexus_style.sass */
-#forum .container { background: #a1a1a1; color: white; }
 /* line 1232, ../sass/partials/_nexus_style.sass */
+#forum .submitted { font-size: 12px; font-family: Lucida Grande, Verdana, Arial, sans-serif; background: transparent; padding: 0; }
+/* line 1237, ../sass/partials/_nexus_style.sass */
+#forum .container { background: #a1a1a1; color: white; }
+/* line 1240, ../sass/partials/_nexus_style.sass */
 #forum .container a { color: black; font-weight: bold; }
-/* line 1235, ../sass/partials/_nexus_style.sass */
+/* line 1243, ../sass/partials/_nexus_style.sass */
 #forum div.indent { margin-left: 2px; }
 
-/* line 1238, ../sass/partials/_nexus_style.sass */
+/* line 1246, ../sass/partials/_nexus_style.sass */
 .forum-starter-picture { float: left; padding: 4px; border: 1px solid #d9d9d9; margin: 5px 7px 5px 0; }
 
-/* line 1245, ../sass/partials/_nexus_style.sass */
+/* line 1253, ../sass/partials/_nexus_style.sass */
 #forum th { background: #434343; text-shadow: none; color: white; }
-/* line 1249, ../sass/partials/_nexus_style.sass */
+/* line 1257, ../sass/partials/_nexus_style.sass */
 #forum th a { color: white; }
-/* line 1251, ../sass/partials/_nexus_style.sass */
+/* line 1259, ../sass/partials/_nexus_style.sass */
 #forum td.forum .icon, #forum .icon div { background: url(images/no-new-posts.png) no-repeat; width: 35px; height: 35px; }
-/* line 1255, ../sass/partials/_nexus_style.sass */
+/* line 1263, ../sass/partials/_nexus_style.sass */
 #forum .name a { font-size: 16px; }
 
-@media screen and (max-width: 768px) { /* line 1259, ../sass/partials/_nexus_style.sass */
+@media screen and (max-width: 768px) { /* line 1267, ../sass/partials/_nexus_style.sass */
   html { font-size: 60%; }
-  /* line 1261, ../sass/partials/_nexus_style.sass */
+  /* line 1269, ../sass/partials/_nexus_style.sass */
   h1#site-title { text-align: center; }
-  /* line 1263, ../sass/partials/_nexus_style.sass */
+  /* line 1271, ../sass/partials/_nexus_style.sass */
   #site-logo { padding-top: 0; }
-  /* line 1265, ../sass/partials/_nexus_style.sass */
+  /* line 1273, ../sass/partials/_nexus_style.sass */
   select.mnav { width: 100%; margin-bottom: 20px; }
-  /* line 1268, ../sass/partials/_nexus_style.sass */
+  /* line 1276, ../sass/partials/_nexus_style.sass */
   #main-menu, .flex-caption { display: none; } }
+/* line 1280, ../sass/partials/_nexus_style.sass */
+.two-sidebars .center, .sidebar-left .center { margin-left: 33%; }
+
+/* line 1283, ../sass/partials/_nexus_style.sass */
+.two-sidebars .center, .sidebar-right .center { margin-right: 33%; }
+
+/* line 1286, ../sass/partials/_nexus_style.sass */
+#primary { float: left; width: 100%; margin-right: -100%; }
+
+/* line 1291, ../sass/partials/_nexus_style.sass */
+body.grid { background: url('../images/grid.png?1397320676') 50% 0px repeat-y; }
+
+/* line 1293, ../sass/partials/_nexus_style.sass */
+.button_grid { position: absolute; top: 100px; height: 40px; width: 40px; color: azure; }

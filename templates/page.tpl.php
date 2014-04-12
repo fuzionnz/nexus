@@ -159,9 +159,22 @@
   <div id="main-content">
     <div class="container"> 
       <div class="row">
-        <?php if($page['sidebar_first']) { $primary_col = 8; } else { $primary_col = 12; } ?>
-        <div id="primary" class="content-area col-sm-<?php print $primary_col; ?>">
-          <section id="content" role="main" class="clearfix">
+        <?php if(($page['sidebar_first']) && ($page['sidebar_second'])) { 
+          $primary_col = 4; 
+          $aside_count = 'aside-left aside-right';
+        } else if(($page['sidebar_first']) or ($page['sidebar_second'])) { 
+          $primary_col = 8; 
+          if($page['sidebar_first']) {
+            $aside_count = 'aside-left';
+          } else {
+            $aside_count = 'aside-right';
+          }
+        } else {
+          $primary_col = 12; 
+          $aside_count = '';
+        } ?>
+        <div id="primary" class="content-area col-sm-<?php print $primary_col; ?> <?php print $aside_count; ?>">
+          <section id="content" role="main" class="clearfix center">
             <?php if (theme_get_setting('breadcrumbs')): ?><?php if ($breadcrumb): ?><div id="breadcrumbs"><?php print $breadcrumb; ?></div><?php endif;?><?php endif; ?>
             <?php print $messages; ?>
             <?php if ($page['content_top']): ?><div id="content_top"><?php print render($page['content_top']); ?></div><?php endif; ?>
@@ -177,8 +190,13 @@
           </section>
         </div>
         <?php if ($page['sidebar_first']): ?>
-          <aside id="sidebar" class="col-sm-4" role="complementary">
+          <aside id="sidebar-first" class="col-sm-4" role="complementary">
             <?php print render($page['sidebar_first']); ?>
+          </aside> 
+        <?php endif; ?>
+        <?php if ($page['sidebar_second']): ?>
+          <aside id="sidebar-second" class="col-sm-4 pull-right" role="complementary">
+            <?php print render($page['sidebar_second']); ?>
           </aside> 
         <?php endif; ?>
       </div>
@@ -229,3 +247,6 @@
     </div>
   </footer>
 </section>
+<?php if (theme_get_setting('grid_display','nexus')): ?>
+  <div class="button_grid">X</div>
+<?php endif; ?>

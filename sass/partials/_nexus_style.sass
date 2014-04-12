@@ -414,7 +414,7 @@ h1#site-title
 
 /* Layout
 
-#primary, #sidebar
+#primary, #sidebar-first, #sidebar-second
   padding-top: 20px
   padding-bottom: 20px
 
@@ -554,7 +554,15 @@ a.frmore
 .region-content-top
   margin-bottom: 20px
 
-#sidebar .block
+#sidebar-first .block
+  margin-bottom: 30px
+  > h2
+    font-size: 20px
+    color: #000
+    margin-bottom: 15px
+    text-transform: uppercase
+    font-weight: bold
+#sidebar-second .block
   margin-bottom: 30px
   > h2
     font-size: 20px
@@ -1267,3 +1275,24 @@ ul
     margin-bottom: 20px
   #main-menu, .flex-caption
     display: none
+
+
+.two-sidebars .center, .sidebar-left .center
+  margin-left: 33%
+
+.two-sidebars .center, .sidebar-right .center
+  margin-right: 33%
+
+#primary
+  float: left
+  width: 100%
+  margin-right: -100%
+
+body.grid
+  background: image-url("grid.png") 50% 0px repeat-y
+.button_grid
+  position: absolute
+  top: 100px
+  height: 40px
+  width: 40px
+  color: azure

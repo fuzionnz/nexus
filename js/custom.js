@@ -1,4 +1,8 @@
 jQuery(window).load(function() {
+  
+  jQuery(".button_grid").click(function(){
+    jQuery("body").toggleClass("grid");
+  });
     
         // Create mobile element
         // hasClass
