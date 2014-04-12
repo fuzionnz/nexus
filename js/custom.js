@@ -23,19 +23,6 @@ jQuery(window).load(function() {
             }
         }
     
-        // Mobile nav function
-        var mobileNav = document.querySelector('.nav-mobile');
-        var toggle = document.querySelector('.menu');
-        mobileNav.onclick = function () {
-            toggleClass(this, 'nav-mobile-open');
-            toggleClass(toggle, 'nav-active');
-        };
-
-
-});
-
-
-( function() {
 	var is_webkit = navigator.userAgent.toLowerCase().indexOf( 'webkit' ) > -1,
 	    is_opera  = navigator.userAgent.toLowerCase().indexOf( 'opera' )  > -1,
 	    is_ie     = navigator.userAgent.toLowerCase().indexOf( 'msie' )   > -1;
@@ -53,4 +40,4 @@ jQuery(window).load(function() {
 			}
 		}, false );
 	}
-})();
+});

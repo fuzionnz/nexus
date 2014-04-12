@@ -66,9 +66,26 @@
 ?>
 <section id="page">
   <?php if($page['top_bar']): ?>
-    <nav class="container">
-      <?php print render ($page['top_bar']); ?>
-    </nav>
+    <div class="container">
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brand</a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <?php print render ($page['top_bar']); ?>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </div>
   <?php endif; ?> 
   <header id="masthead" class="site-header container" role="banner">
     <div class="row">
@@ -86,7 +103,6 @@
         <?php endif; ?>
       </div>
       <div class="col-sm-6 mainmenu">
-        <div class="nav-mobile"></div>
         <nav id="navigation" role="navigation">
           <div id="main-menu">
             <?php 
