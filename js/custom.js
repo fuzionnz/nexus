@@ -1,15 +1,32 @@
 jQuery(window).load(function() {
     
-  /* Navigation */
+        // Create mobile element
+        // hasClass
+        function hasClass(elem, className) {
+            return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+        }
+    
+        // toggleClass
+        function toggleClass(elem, className) {
+            var newClass = ' ' + elem.className.replace(/[\t\r\n]/g, ' ') + ' ';
+            if (hasClass(elem, className)) {
+                while (newClass.indexOf(' ' + className + ' ') >= 0) {
+                    newClass = newClass.replace(' ' + className + ' ', ' ');
+                }
+                elem.className = newClass.replace(/^\s+|\s+$/g, '');
+            } else {
+                elem.className += ' ' + className;
+            }
+        }
+    
+        // Mobile nav function
+        var mobileNav = document.querySelector('.nav-mobile');
+        var toggle = document.querySelector('.menu');
+        mobileNav.onclick = function () {
+            toggleClass(this, 'nav-mobile-open');
+            toggleClass(toggle, 'nav-active');
+        };
 
-	jQuery('#main-menu > ul').superfish({ 
-		delay:       500,								// 0.1 second delay on mouseout 
-		dropShadows: true								// disable drop shadows 
-	});	  
-
-	jQuery('#main-menu > ul').mobileMenu({
-		prependTo:'.mobilenavi'
-	});
 
 });
 
