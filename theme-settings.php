@@ -63,7 +63,7 @@ function nexus_form_system_theme_settings_alter(&$form, &$form_state) {
   $form['nexus_settings']['grid']['grid_display'] = array(
     '#type' => 'checkbox',
     '#title' => t('Show Developer button grid'),
-    '#default_value' => theme_get_setting('grid','nexus'),
+    '#default_value' => theme_get_setting('grid_display','nexus'),
     '#description'   => t("Check this option to show Button to Show Grid columns. Uncheck to hide."),
   );
 }
