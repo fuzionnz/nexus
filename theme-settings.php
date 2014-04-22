@@ -60,7 +60,7 @@ function nexus_form_system_theme_settings_alter(&$form, &$form_state) {
   $form['nexus_settings']['slideshow']['slideimage'] = array(
     '#markup' => t('To change the Slide Images, Replace the slide-image-1.jpg, slide-image-2.jpg and slide-image-3.jpg in the images folder of the theme folder.'),
   );
-  $form['nexus_settings']['grid']['grid_display'] = array(
+  $form['theme_settings']['grid']['grid_display'] = array(
     '#type' => 'checkbox',
     '#title' => t('Show Developer button grid'),
     '#default_value' => theme_get_setting('grid_display','nexus'),

@@ -264,5 +264,5 @@
   </footer>
 </section>
 <?php if (theme_get_setting('grid_display','nexus')): ?>
-  <div class="button_grid">X</div>
+  <div class="button_grid"></div>
 <?php endif; ?>
