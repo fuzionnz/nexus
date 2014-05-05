@@ -1,12 +1,14 @@
 name = Nexus Theme
-description = Nexus Theme is a premium Drupal 7 theme. Developed.
+description = Nexus Theme is a premium Drupal 7 theme. Developed by <a href="http://www.devsaran.com">Devsaran.com</a> & <a href="http://twitter.com/nesta_">Nesta</a>.
 core = 7.x
 engine = phptemplate
 stylesheets[all][] = css/main.css
 stylesheets[all][] = css/flexslider.css
 scripts[] = js/bootstrap/collapse.js
+
 scripts[] = js/custom.js
 scripts[] = js/css_browser.js
+
 regions[sidebar_first]  = First Sidebar
 regions[sidebar_second] = Second Sidebar
 regions[top_bar]        = Top Bar
@@ -37,3 +39,9 @@ settings[breadcrumbs]  = 1
 settings[slide1_head]  = "Sample product"
 settings[slide1_desc]  = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt elit, sed do eiusmod tempor..."
 settings[slide1_url]  = "node/1"
+settings[slide2_head]  = "Sample product 2"
+settings[slide2_desc]  = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt elit, sed do eiusmod tempor..."
+settings[slide2_url]  = "node/2"
+settings[slide3_head]  = "Sample product 3"
+settings[slide3_desc]  = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt elit, sed do eiusmod tempor..."
+settings[slide3_url]  = "node/3"
