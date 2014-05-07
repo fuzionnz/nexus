@@ -234,6 +234,10 @@ function nexus_preprocess_node(&$vars) {
   $vars['date'] = t('!datetime', array('!datetime' =>  date('j F Y', $vars['created'])));
 }
 
+function nexus_menu_tree(&$variables) {
+  return '<ul class="menu nav nav-pills">' . $variables['tree'] . '</ul>';
+}
+
 function nexus_page_alter($page) {
   // <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
   $viewport = array(
