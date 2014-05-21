@@ -3193,44 +3193,44 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 @font-face { font-family: "open_sansregular"; src: url("../../fonts/opensans-regular-webfont.eot"); src: url("../../fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/opensans-regular-webfont.woff") format("woff"), url("../../fonts/opensans-regular-webfont.ttf") format("truetype"), url("../../fonts/opensans-regular-webfont.svg#open_sansregular") format("svg"); font-weight: normal; font-style: normal; }
 
 /* line 1, ../sass/partials/_nexus_style.sass */
-html { height: 100%; }
-/* line 3, ../sass/partials/_nexus_style.sass */
-html body { nowhitespace: afterproperty; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; line-height: 1; height: 100%; }
-/* line 9, ../sass/partials/_nexus_style.sass */
-html body #page { height: 100%; }
-/* line 11, ../sass/partials/_nexus_style.sass */
+html { margin: 0; padding: 0; height: 100%; }
+/* line 5, ../sass/partials/_nexus_style.sass */
+html body { nowhitespace: afterproperty; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; line-height: 1; height: 100%; margin: 0; padding: 0; }
+/* line 13, ../sass/partials/_nexus_style.sass */
+html body #page { height: 100%; min-height: 100%; position: relative; }
+/* line 17, ../sass/partials/_nexus_style.sass */
 html body #page #primary, html body #page #sidebar-first, html body #page #sidebar-second { padding-top: 20px; padding-bottom: 20px; }
-/* line 14, ../sass/partials/_nexus_style.sass */
-html body #page #primary { float: left; width: 100%; margin-right: -100%; }
 /* line 20, ../sass/partials/_nexus_style.sass */
+html body #page #primary { float: left; width: 100%; margin-right: -100%; }
+/* line 26, ../sass/partials/_nexus_style.sass */
 html body #page #sidebar-first .block, html body #page #sidebar-second .block { margin-bottom: 30px; }
-/* line 22, ../sass/partials/_nexus_style.sass */
-html body #page #sidebar-first .block > h2, html body #page #sidebar-second .block > h2 { font-size: 20px; color: black; margin-bottom: 15px; text-transform: uppercase; font-weight: bold; }
 /* line 28, ../sass/partials/_nexus_style.sass */
-html body #page .preface-block .block, html body #page .footer-block .block, html body #page .region-footer .block, html body #page .region-header .block, html body #page .region-content-top .block { margin-bottom: 30px; }
+html body #page #sidebar-first .block > h2, html body #page #sidebar-second .block > h2 { font-size: 20px; color: black; margin-bottom: 15px; text-transform: uppercase; font-weight: bold; }
 /* line 34, ../sass/partials/_nexus_style.sass */
-html body #page #main-content { padding-top: 15px; }
-/* line 36, ../sass/partials/_nexus_style.sass */
-html body #page #main-content .two-sidebars .center, html body #page #main-content .aside-left .center { margin-left: 33%; }
-/* line 38, ../sass/partials/_nexus_style.sass */
-html body #page #main-content .two-sidebars .center, html body #page #main-content .aside-right .center { margin-right: 33%; }
+html body #page .preface-block .block, html body #page .footer-block .block, html body #page .region-footer .block, html body #page .region-header .block, html body #page .region-content-top .block { margin-bottom: 30px; }
 /* line 40, ../sass/partials/_nexus_style.sass */
+html body #page #main-content { padding-top: 15px; }
+/* line 42, ../sass/partials/_nexus_style.sass */
+html body #page #main-content .two-sidebars .center, html body #page #main-content .aside-left .center { margin-left: 33%; }
+/* line 44, ../sass/partials/_nexus_style.sass */
+html body #page #main-content .two-sidebars .center, html body #page #main-content .aside-right .center { margin-right: 33%; }
+/* line 46, ../sass/partials/_nexus_style.sass */
 html body #page #main-content #header-block, html body #page #main-content #footer-block { padding: 20px 0 0; }
 
 /* =Content ----------------------------------------------- */
-/* line 47, ../sass/partials/_nexus_style.sass */
+/* line 53, ../sass/partials/_nexus_style.sass */
 .node h2.title a, h1.page-title { color: black; font-size: 36px; font-weight: bold; margin-bottom: 20px; margin-top: 10px; }
 
-/* line 54, ../sass/partials/_nexus_style.sass */
+/* line 60, ../sass/partials/_nexus_style.sass */
 #content .node-teaser { padding-bottom: 30px; border-bottom: 1px solid #dddddd; margin-bottom: 15px; }
 
-/* line 59, ../sass/partials/_nexus_style.sass */
+/* line 65, ../sass/partials/_nexus_style.sass */
 .node-teaser img { border: 1px solid #cccccc; padding: 6px; height: auto; max-width: 97.4%; margin: 0.5em 1em 0.5em 0; float: left; }
 
-/* line 67, ../sass/partials/_nexus_style.sass */
+/* line 73, ../sass/partials/_nexus_style.sass */
 .page-node #content-wrap img { border: 1px solid #cccccc; padding: 6px; height: auto; max-width: 97.4%; margin: 0.5em 1em 0.5em 0; }
 
-/* line 74, ../sass/partials/_nexus_style.sass */
+/* line 80, ../sass/partials/_nexus_style.sass */
 .region-content-top { margin-bottom: 20px; }
 
 /* line 1, ../sass/partials/_dev.sass */
@@ -3310,9 +3310,9 @@ img { max-width: 100%; }
 .footer-block .block > h2 { font-size: 16px; margin-bottom: 10px; padding: 10px 0px; color: white; text-transform: uppercase; }
 
 /* line 13, ../sass/partials/_footer.sass */
-.site-footer { padding: 10px 0px; background: #292929; font-size: 12px; position: absolute; bottom: 0; width: 100%; }
+.site-footer { padding: 10px 0px; background: #292929; font-size: 12px; bottom: 0; width: 100%; }
 
-/* line 20, ../sass/partials/_footer.sass */
+/* line 19, ../sass/partials/_footer.sass */
 .fcred { padding: 10px 0px; color: #bbbbbb; }
-/* line 24, ../sass/partials/_footer.sass */
+/* line 23, ../sass/partials/_footer.sass */
 .fcred a:link, .fcred a:visited { color: white; }
